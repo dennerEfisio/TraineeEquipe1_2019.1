@@ -4,8 +4,7 @@
 Desenvolvedores:
 - Denner,
 - Gabriel,
-- João Victor,
-- Ruan
+- Felipe
 
 
 Scrum Master:
@@ -13,7 +12,7 @@ Scrum Master:
 
 
 Acompanhante:
-- André Vasco
+- Braulio
 
 ## GIT TUTORIAL
 ### Primeira configuração
