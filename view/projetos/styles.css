@@ -1,0 +1,48 @@
+body
+{
+background-color: #000000;
+}
+
+nav
+{
+ height: 50px;
+}
+
+nav button
+{
+    color: #000000;
+    background-color: #096201;
+    margin-top: 20px;
+}
+
+.container
+{
+margin-top: 200px;
+padding-bottom: 0px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+background-color: white;
+width: 400px;
+}
+
+.form-group
+{
+width: 300px;
+margin-top: 20px;
+
+}
+
+form button
+{
+    color: #000000;
+    background-color: #096201;
+    margin-bottom: 20px;
+}
+
+.buttonTable button
+{
+    margin-left: 400px;
+    color: #000000;
+    background-color: #096201; 
+}
