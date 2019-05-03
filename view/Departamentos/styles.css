@@ -4,13 +4,13 @@ Preto:#000000
 Grafite: #282828
 Verde: #096201 */
 
-.body {
+body {
     font-family: 'Montserrat', sans-serif;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.body h1{
+h1{
     color: whitesmoke;
 }
 
@@ -22,7 +22,7 @@ Verde: #096201 */
     font-family: 'Orbitron', sans-serif;
 }
 
-.navegacao{
+navegacao{
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -30,8 +30,11 @@ Verde: #096201 */
     font-size: 35px !important;
 }
 
+button {
+    margin: 5px;
+}
 
-.body {
+body {
     background-color: #282828;
 }
 
