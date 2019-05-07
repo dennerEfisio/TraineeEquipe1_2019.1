@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Departamentos</title>
+    <title>Departamentos - Editar</title>
 
 </head>
 
@@ -61,18 +61,16 @@
 
     <h1>Departamentos</h1>
 
-    <h2>Adicionar Usuário</h2>
 
     <form>
-        <div class="form-group criarUsuario">
+        <div class="form-group paginaEditar">
             <label for="formGroupExampleInput">Nome</label>
-            <input type="text" class="form-control form-control-lg" id="inserindoUsuario" placeholder="Insira seu nome">
-            <label for="formGroupExampleInput">Departamento</label>
-            <input type="text" class="form-control form-control-lg" id="inserindoDepartamento"
-                placeholder="Insira seu Departamento">
-            <button type="button" class="btn btn-outline-dark">Enviar</button>
+            <input class="form-control" type="text" value="nome do usuário" readonly>
+            <a type="button" class="btn btn-secondary" href="paginaEdicaoDepartamento.html">Editar</a>
+            <button type="button" class="btn btn-secondary">Excluir</button>
         </div>
     </form>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
