@@ -19,7 +19,7 @@
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light navegacao" style="background-color: #2E8B57">
+        <nav class="navbar navbar-expand-lg navbar-light barraNavegacao">
             <a class="navbar-brand" href="#">CÓDIGO SÊNIOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,14 +59,14 @@
         </nav>
     </div>
 
-    <h1>Departamentos</h1>
+    <h1 class="titleDepartamento container">Departamentos</h1>
 
 
     <form>
-        <div class="form-group paginaEditar">
+        <div class="form-group paginaEditar container containerEditar" >
             <label for="formGroupExampleInput">Nome</label>
             <input class="form-control" type="text" value="nome do usuário" readonly>
-            <a type="button" class="btn btn-secondary" href="paginaEdicaoDepartamento.html">Editar</a>
+            <button type="button submit" form="action" class="btn btn-secondary" href="paginaEdicaoDepartamento.html">Editar</button>
             <button type="button" class="btn btn-secondary">Excluir</button>
         </div>
     </form>

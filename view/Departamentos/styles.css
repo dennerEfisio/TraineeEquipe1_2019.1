@@ -1,8 +1,8 @@
-/* Você consegue men, vamo que vamo
+/*  Você consegue men, vamo que vamo
 Cores: 
-Preto:#000000
-Grafite: #282828
-Verde: #096201 */
+Preto
+Steel Blue
+White
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -10,15 +10,25 @@ body {
     margin-right: 5px;
 }
 
-h1 {
-    color: whitesmoke;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.barraNavegacao {
+    background-color: steelblue;
+    color: white;
 }
 
-h2 {
+.titleDepartamento {
     color: whitesmoke;
-    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.subtitleDepartamento {
+    color: whitesmoke;
+    text-align: center;
+    height: 10px;
+}
+
+.containerEditar {
+    margin-top: 150px;
 }
 
 .criarUsuario {
@@ -61,10 +71,40 @@ button {
     margin: 5px;
 }
 
+.listaResponsiva {
+    margin-top: 50px;
+}
+
+.verMaisLista{
+    
+}
+
 body {
-    background-color: #282828;
+    background-color: grey;
 }
 
 .form-group {
-    background-color: greenyellow;
+    background-color: steelblue;
+}
+
+.VerMais {
+    text-decoration-style: none;
+    text-decoration: none
+}  */
+
+.listaResponsiva {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.titleDepartamento {
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.subtitleDepartamento {
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
