@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
                 </li>
 
 
@@ -34,18 +34,18 @@
                         <a class="dropdown-item" href="#">Projetos</a>
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Cliente 
+                            Cliente
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="#">Tipo de cliente</a>
-                            </div>   
+                            <a class="dropdown-item" href="#">Tipo de cliente</a>
+                        </div>
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Usuário
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                                <a class="dropdown-item" href="#">Cargo</a>
-                                <a class="dropdown-item" href="#">Departamento</a>
+                            <a class="dropdown-item" href="#">Cargo</a>
+                            <a class="dropdown-item" href="#">Departamento</a>
                         </div>
                     </div>
                 </li>
@@ -54,23 +54,25 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
-                <button type="login" class="btn nohover">Login</button>
             </form>
+            <button type="login" class="btn nohover" id="NavbarLogin">Login</button>
         </div>
     </nav>
 
-    <div class="container">
-        <form>
-            <div class="form-group">
+    <!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
+
+    <div class="container contFormCriar">
+        <form class="formCriar">
+            <div class="form-group nomeCriar">
                 <label>Nome:</label>
-                <input type="nome" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto">
+                <input type="nome" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto" required>
             </div>
-            <div class="form-group">
+            <div class="form-group descricaoCriar">
                 <label>Descrição do Projeto:</label>
-                <textarea class="form-control" id="CriarProjetoDescrição" rows="3"></textarea>
+                <textarea class="form-control" id="CriarProjetoDescrição" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn nohover">Criar</button>
-            <button type="submit" class="btn nohover">Cancelar</button>
+            <button type="submit" class="btn nohover" id="botaoCriarProjetoNovo">Criar</button>
+            <button type="cancel" class="btn nohover" id="botaoCancelarCriaçãoProjeto">Cancelar</button>
         </form>
 
     </div>
