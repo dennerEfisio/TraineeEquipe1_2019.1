@@ -107,19 +107,15 @@ h2 {
     font-size: 25px;
 }
 
-
-
 /* NavBar */
 
 .barraNavegacao {
-    background-color:#4682B4;
+    background-color: #4682B4;
     color: white;
     padding-left: 30px;
     padding-top: 15px;
     margin-bottom: 50px;
 }
-
-
 
 /* Titles Departamento */
 
@@ -137,12 +133,11 @@ h2 {
     margin-top: 50px;
 }
 
-
 /* Editar Departamento */
 
 .formEditar {
     padding-top: 20px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
@@ -155,15 +150,12 @@ h2 {
     margin-right: 80px;
 }
 
-
 .VerMais {
     text-decoration-style: none;
     text-decoration: none
 }
 
-
 /* Pagina Edição Departamento */
-
 
 .edicaoUsuario {
     margin-top: 20px;
@@ -182,7 +174,7 @@ h2 {
     color: black;
 }
 
-/* Botões Geral */ 
+/* Botões Geral */
 
 .botaoSubmitCancel {
     margin-top: 15px;
