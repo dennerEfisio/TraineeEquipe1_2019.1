@@ -1,50 +1,58 @@
-.criando-cliente{
+.criando-cliente {
     margin-top: 5vh;
-    margin-left: 11vw;
     margin-bottom: 5vh;
 }
 
-.formulario-cliente{
+.formulario-cliente {
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     font-weight: bold;
 }
 
-.intro-criando{
+.intro-criando {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
 }
 
-.editando-cliente{
+.editando-cliente {
     margin-top: 5vh;
-    margin-left: 11vw;
     margin-bottom: 5vh;
 }
 
-.intro-editando{
+.intro-editando {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
 }
 
-.listagem-clientes{
+.listagem-clientes {
     margin-top: 5vh;
     border-width: 3px !important;
     border-color: steelblue !important;
     border-style: outset !important;
 }
 
-.intro-listando{
+.intro-listando {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     margin-top: 3vh;
 }
 
-.intro-vendo-mais{
+.intro-vendo-mais {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     margin-top: 3vh;
+}
+
+.nome-cliente-ver-mais {
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.cliente-item-vermais {
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
 }
