@@ -59,18 +59,43 @@
         </nav>
     </div>
 
-    <h1 class="titleDepartamento container">Departamentos</h1>
+    <div class="container conteudoEditarUsuario">
 
-    <form>
-        <div class="form-group paginaEditar container containerEditar" >
-            <label for="formGroupExampleInput">Nome</label>
-            <input class="form-control" type="text" value="nome do usuário" readonly>
-            <button type="button submit" form="action" class="btn btn-secondary" href="paginaEdicaoDepartamento.html">Editar</button>
-            <button type="button" class="btn btn-secondary">Excluir</button>
-        </div>
-    </form>
+        <h1 class="titleDepartamento">Departamentos</h1>
 
+        <form>
+            <div class="form-group paginaEditar containerEditar formh2">
+                <label for="formGroupExampleInput">Nome</label>
+                <input class="form-control" type="text" value="nome do usuário" readonly>
+                <button type="button submit" form="action" class="btn btn-secondary botaoSubmitCancel" data-toggle="modal"
+                    data-target="#modalEditarUsuario">Editar</button>
 
+                <div class="modal modalEditarUsuario" id="modalEditarUsuario" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Informação usuário</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Informações sobre usuário</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="btn btn-secondary" href="paginaEdicaoDepartamento.html"
+                                    role="button">Editar</a>
+                                <button type="button" class="btn btn-secondary">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-secondary botaoSubmitCancel">Excluir</button>
+            </div>
+        </form>
+
+    </diV>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
