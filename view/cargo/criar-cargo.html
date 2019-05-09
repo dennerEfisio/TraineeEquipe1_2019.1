@@ -2,88 +2,98 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Criar Cargo</title>
-    <link rel="shortcut icon" href="../tipo/imagens/icecube.png">
+  <title>Criar Cargo</title>
+  <link rel="shortcut icon" href="../tipo/imagens/icecube.png">
 
 </head>
 
 <body>
 
-    <!---------------------------------------------------------NAVEGACAO------------------------------------------------------------>
-    <ul class="nav flex-column navegacao-lateral">
-        <h5>Código Sênior</h5>
-        <li class="nav-item" style="text-align: center;">
-          <a class="nav-link corzinha" href="#"><i class="fas fa-cube botao-cubo"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha active" href="#">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Projetos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Usuário</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Tipo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Departamento</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link corzinha" href="#">Cargo</a>
-        </li>
-    
-    
-      </ul>
-    <!---------------------------------------------------------NAVEGACAO--------------------------------------------------------------------->
+  <!---------------------------------------------------------NAVEGACAO------------------------------------------------------------>
+  <ul class="nav flex-column fixed-top navegacao-lateral">
+    <h5>Código Sênior</h5>
+    <li class="nav-item" style="text-align: center;">
+      <a class="nav-link corzinha" href="#"><i class="fas fa-cube botao-cubo"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha active" href="#">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Projetos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Usuário</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Serviços</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Cliente</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Tipo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Departamento</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link corzinha" href="#">Cargo</a>
+    </li>
 
-        <div class="container cargo-criar">
-        <form>
-            <div class="form-group col-md-20">
-                <label for="exampleFormControlInput1">Informe o nome</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-            </div>
-            <div class="form-group col-md-20">
-            <label for="exampleFormControlSelect1">Informe o departamento</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-    </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  </ul>
+  <!---------------------------------------------------------NAVEGACAO--------------------------------------------------------------------->
+
+  <h2 class="criando-cargo">Crie o cargo do cliente</h2>
+  
+  <div class="container cargo-criar">
+    <form class="d-flex justify-content-around">
+      <div class="form-row">
+        <div class="form-group col-8">
+          <label for="exampleFormControlInput1">Nome</label>
+          <input type="text" class="form-control" id="nomecargo" placeholder="NOME" required>
+        </div>
+        <div class="form-group col-4">
+          <label for="departamentocargo">Departamento</label>
+          <select class="form-control" id="departamentocargo" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-dark">Voltar</button>
+    <button type="button" class="btn btn-outline-primary">Criar</button>
+  </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 

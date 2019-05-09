@@ -2,7 +2,7 @@
 
 .navegacao-lateral{
     background-color: #4682B4;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 15vw;
     height: 100vh;
     border-top-right-radius: 25px;
@@ -28,35 +28,6 @@ h5{
     text-align: center;
 }
 
-.navegacao-lateral {
-    width: 15vw;
-    -webkit-transition: width 1s ease;
-}
-
-#nav img {
-    width: 100px;
-}
-
-@media all and (max-width: 700px) {
-    .navegacao-lateral {
-        width: 15vw;
-    } 
-    .navegacao-lateral {
-         width: 50vw;
-        -webkit-animation-name: comeBackSmaller;
-        -webkit-animation-duration: 0.8s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: 1;
-    }  
-    @-webkit-keyframes comeBackSmaller {  
-        0% { opacity: 1.0; width: 100px; }
-        25% { opacity: 0.0; width: 75px; }
-        50% { opacity: 0.0; width: 25px; }
-        100% { opacity: 1.0; width: 50px; }
-    }
-
-
-}
 
 .tipo-criar {
     display: flex;
@@ -65,28 +36,25 @@ h5{
     color: white;
     background-color: steelblue;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cargo-criar{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    background-color: steelblue;
-    color: white;
-    width: 35vw;
-    height: 35vh;
-    border-radius: 10px;
+    margin-top: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    font-weight: bold;
 }
 
+.criando-cargo{
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    text-align: center;
+}
 
 
 .listagem-tipo {
     text-align: center;
 }
-
-
 
