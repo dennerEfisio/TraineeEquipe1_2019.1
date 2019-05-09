@@ -8,83 +8,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <title>Ver mais cargo</title>
-    <link rel="shortcut icon" href="../tipo/imagens/icecube.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Ver Mais</title>
+    <link rel="shortcut icon" href="../login/cube.png">
 
 </head>
 
 <body>
+    <h2 class="intro-vendo-mais-cargo">INFORMAÇÕES SOBRE O CARGO</h2>
 
-    <!---------------------------------------------------------NAVEGACAO------------------------------------------------------------>
-    <div class="navegacao">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2E8B57">
-            <a class="navbar-brand" href="#">CÓDIGO SÊNIOR</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-8 nome-cliente-ver-mais-cargo">Nome do cliente aqui!</h1>
+            <p class="lead">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action cliente-item-vermais">Departamento</a>
+                </div>
+            </p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal">
+                Deletar
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav d-flex justify-content-around">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Usuário</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cliente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tipo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Departamento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cargo</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!---------------------------------------------------------NAVEGACAO--------------------------------------------------------------------->
 
-
-    <div class="tipo-criar">
-        <div class="card text-black mb-3" style="max-width: 18rem; background-color: #2E8B57;">
-            <div class="card-header">
-                Informações
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Informações sobre o Cargo</label>
-                        <textarea class="form-control" id="informacoes-cargo" value="cargo" rows="3"></textarea>
-                        <label for="exampleFormControlSelect1">Departamento</label>
-                        <select class="form-control" id="exampleFormControlSelect1" value="Departamento">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja deletar esse cliente?
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Ao deletar esse cliente não será possível recuperá-lo!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger">Deletar</button>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-outline-dark">Deletar</button>
-                    <button type="button" class="btn btn-outline-dark">Editar</button>
+                </div>
             </div>
-            </form>
+
+            <button type="button" class="btn btn-outline-primary">Editar</button>
+
         </div>
-    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

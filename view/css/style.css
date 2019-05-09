@@ -58,3 +58,32 @@ h5{
     text-align: center;
 }
 
+.intro-vendo-mais-cargo{
+    margin-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    text-align: center;
+}
+
+.nome-cliente-ver-mais-cargo{
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.modal-title{
+    color: black;
+}
+
+.intro-listando-cargo{
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+color: steelblue;
+margin-top: 3vh;
+}
+
+.listagem-cargo{
+margin-top: 5vh;
+border-width: 3px !important;
+border-color: steelblue !important;
+border-style: outset !important;
+}
