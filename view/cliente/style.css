@@ -1,0 +1,50 @@
+.criando-cliente{
+    margin-top: 5vh;
+    margin-left: 11vw;
+    margin-bottom: 5vh;
+}
+
+.formulario-cliente{
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    font-weight: bold;
+}
+
+.intro-criando{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.editando-cliente{
+    margin-top: 5vh;
+    margin-left: 11vw;
+    margin-bottom: 5vh;
+}
+
+.intro-editando{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.listagem-clientes{
+    margin-top: 5vh;
+    border-width: 3px !important;
+    border-color: steelblue !important;
+    border-style: outset !important;
+}
+
+.intro-listando{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    margin-top: 3vh;
+}
+
+.intro-vendo-mais{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    margin-top: 3vh;
+}
