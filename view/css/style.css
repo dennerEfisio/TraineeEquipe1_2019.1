@@ -1,9 +1,7 @@
-
-
-.navegacao-lateral{
+.navegacao-lateral {
     background-color: #4682B4;
     font-family: 'Montserrat', sans-serif;
-    width: 15vw;
+    width: 0;
     height: 100vh;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -11,7 +9,7 @@
     padding-top: 20px;
 }
 
-.corzinha{
+.corzinha {
     color: white;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -20,14 +18,12 @@
 .corzinha:hover {
     color: #1E90FF;
     transform: scale(1.1);
-
 }
 
-h5{
-    color:white;
+h5 {
+    color: white;
     text-align: center;
 }
-
 
 .tipo-criar {
     display: flex;
@@ -39,51 +35,89 @@ h5{
     font-family: 'Montserrat', sans-serif;
 }
 
-.cargo-criar{
+.cargo-criar {
     margin-top: 5vh;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     font-weight: bold;
 }
 
-.criando-cargo{
+.criando-cargo {
     margin-top: 15vh;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     text-align: center;
 }
 
-
 .listagem-tipo {
     text-align: center;
 }
 
-.intro-vendo-mais-cargo{
+.intro-vendo-mais-cargo {
     margin-top: 3vh;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     text-align: center;
 }
 
-.nome-cliente-ver-mais-cargo{
+.nome-cliente-ver-mais-cargo {
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
 }
 
-.modal-title{
+.modal-title {
     color: black;
 }
 
-.intro-listando-cargo{
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-color: steelblue;
-margin-top: 3vh;
+.intro-listando-cargo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    margin-top: 3vh;
 }
 
-.listagem-cargo{
-margin-top: 5vh;
-border-width: 3px !important;
-border-color: steelblue !important;
-border-style: outset !important;
+.listagem-cargo {
+    margin-top: 5vh;
+    border-width: 3px !important;
+    border-color: steelblue !important;
+    border-style: outset !important;
 }
+
+.navegacao-lateral {
+    width: 15vw;
+    -webkit-transition: width 1s ease;
+}
+
+@media all and (max-width: 700px) {
+    .navegacao-lateral {
+        /* width: 15vw; */
+    }
+    .navegacao-lateral {
+        /* width: 50vw; */
+        -webkit-animation-name: comeBackSmaller;
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+    }
+    @-webkit-keyframes comeBackSmaller {
+        0% {
+            opacity: 1.0;
+            width: 100px;
+        }
+        25% {
+            opacity: 0.0;
+            width: 75px;
+        }
+        50% {
+            opacity: 0.0;
+            width: 25px;
+        }
+        100% {
+            opacity: 1.0;
+            width: 50px;
+        }
+    }
+
+    .mystyle{
+        width: 250px;
+    }

@@ -1,11 +1,10 @@
 var nav = document.getElementById("sidenavbar");
 nav.addEventListener("mouseenter", function(){
 
-    nav.style.width = "200px";
+    nav.classList.add("mystyle");
 
 });
 
 nav.addEventListener("mouseleave", function(){
 
-    nav.style.width = "0px";
-});
+    nav.classList.remove("gabriel");
