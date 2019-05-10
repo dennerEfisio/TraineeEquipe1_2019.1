@@ -8,3 +8,5 @@ nav.addEventListener("mouseenter", function(){
 nav.addEventListener("mouseleave", function(){
 
     nav.classList.remove("gabriel");
+
+});

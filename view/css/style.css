@@ -87,6 +87,7 @@ h5 {
     .navegacao-lateral {
         /* width: 15vw; */
     }
+}
     .navegacao-lateral {
         /* width: 50vw; */
         -webkit-animation-name: comeBackSmaller;
@@ -112,9 +113,7 @@ h5 {
             width: 50px;
         }
     }
-
-    .contTableListagem
-{
-    background-color: white;
-    border-radius: 10px;
-}
+    .contTableListagem {
+        background-color: white;
+        border-radius: 10px;
+    }
