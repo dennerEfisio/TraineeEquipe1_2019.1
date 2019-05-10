@@ -2,94 +2,96 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
 
-    <title>Criar - Projetos</title>
+	<title>Criar - Projetos</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Código Sênior</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                </li>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navProjeto">
+		<a class="navbar-brand" href="#">Código Sênior</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServiço" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Serviços
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownServiço">
+						<a class="dropdown-item" href="#">Projetos</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCliente" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Cliente
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownCliente">
+						<a class="dropdown-item" href="#">Tipos de clientes</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsuario" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Usuários
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownUsuario">
+						<a class="dropdown-item" href="#">Cargos</a>
+						<a class="dropdown-item" href="#">Departamentos</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
+			</form>
+			<button type="button" class="btn btn-outline-primary" id="navbarLogin">Login</button>
+			
+		</div>
+	</nav>
+
+	<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
+
+	<div class="container">
+		<h1 class="tituloProjeto">Criar Projeto</h1>
+		<form class="formProjeto">
+			<div class="form-group nomeCriar">
+				<label>Nome:</label>
+				<input type="nome" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto" required>
+			</div>
+			<div class="form-group descricaoCriar">
+				<label>Descrição do Projeto:</label>
+				<textarea class="form-control" id="CriarProjetoDescrição" rows="3" required></textarea>
+			</div>
+			<button type="button" class="btn btn-outline-primary" id="botaoCriarProjetoNovo">Criar</button>
+			<button type="button" class="btn btn-outline-danger" id="botaoCancelarCriaçãoProjeto">Cancelar</button>
+		</form>
+
+	</div>
 
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Serviços
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="#">Projetos</a>
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Cliente
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="#">Tipo de cliente</a>
-                        </div>
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Usuário
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Cargo</a>
-                            <a class="dropdown-item" href="#">Departamento</a>
-                        </div>
-                    </div>
-                </li>
 
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
-            </form>
-            <button type="login" class="btn nohover" id="NavbarLogin">Login</button>
-        </div>
-    </nav>
-
-    <!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
-
-    <div class="container contFormCriar">
-        <form class="formCriar">
-            <div class="form-group nomeCriar">
-                <label>Nome:</label>
-                <input type="nome" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto" required>
-            </div>
-            <div class="form-group descricaoCriar">
-                <label>Descrição do Projeto:</label>
-                <textarea class="form-control" id="CriarProjetoDescrição" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn nohover" id="botaoCriarProjetoNovo">Criar</button>
-            <button type="cancel" class="btn nohover" id="botaoCancelarCriaçãoProjeto">Cancelar</button>
-        </form>
-
-    </div>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
