@@ -70,17 +70,12 @@ h5 {
 }
 
 .intro-listando-cargo {
+    font-size: 40px;
+    font-weight: bold;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     margin-top: 3vh;
-}
-
-.listagem-cargo {
-    margin-top: 5vh;
-    border-width: 3px !important;
-    border-color: steelblue !important;
-    border-style: outset !important;
 }
 
 .navegacao-lateral {
@@ -118,6 +113,8 @@ h5 {
         }
     }
 
-    .mystyle{
-        width: 250px;
-    }
+    .contTableListagem
+{
+    background-color: white;
+    border-radius: 10px;
+}
