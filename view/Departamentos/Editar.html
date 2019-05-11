@@ -66,32 +66,33 @@
         <form>
             <div class="form-group paginaEditar containerEditar formh2">
                 <label for="formGroupExampleInput">Nome</label>
-                <input class="form-control" type="text" value="nome do usuário" readonly>
-                <button type="button submit" form="action" class="btn btn-secondary botaoSubmitCancel"
-                    data-toggle="modal" data-target="#modalEditarUsuario">Editar</button>
+                <input class="form-control" type="text" value="Departamento" required>
+                <button type="button submit" form="action" class="btn btn-outline-danger botaoSubmitCancel"
+                    data-toggle="modal" data-target="#excluirEditarUsuario">Excluir</button>
 
-                <div class="modal modalEditarUsuario" id="modalEditarUsuario" tabindex="-1" role="dialog">
+                <div class="modal modalEditarUsuario" id="excluirEditarUsuario" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Informação usuário</h5>
+                                <h5 class="modal-title">Exclusão</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Informações sobre usuário</p>
+                                <h2>Deseja realmente excluir o Departamento?</h2>
+                                <h5>Caso seja excluído, não será possível recuperar as informações!!!</h5>
                             </div>
                             <div class="modal-footer">
-                                <a class="btn btn-secondary" href="paginaEdicaoDepartamento.html"
-                                    role="button">Editar</a>
-                                <button type="button" class="btn btn-secondary">Cancelar</button>
+                                <a class="btn btn-outline-danger"
+                                    role="button">Excluir</a>
+                                <button type="button" class="btn btn-outline-primary">Cancelar</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-secondary botaoSubmitCancel">Excluir</button>
+                <a class="btn btn-outline-primary botaoSubmitCancel" href="paginaEdicaoDepartamento.html" role="button">Editar</a>
             </div>
         </form>
 
