@@ -8,6 +8,10 @@ Resto: steelblue padrao, #7ab1e6 Light, #005684 Dark
 
 /* body */
 
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
 .barraNavegacao{
     background-color: #7ab1e6;
 }
@@ -29,4 +33,6 @@ Resto: steelblue padrao, #7ab1e6 Light, #005684 Dark
     color: steelblue;
     margin-top: 80px;
     margin-bottom: 20px;
+    width: 80%;
+    display: flex;
 }
