@@ -107,6 +107,10 @@ h5 {
     }
 }
 
+.setaesquerda{
+    display: none;
+}
+
 .contTableListagem {
     background-color: white;
     border-radius: 10px;

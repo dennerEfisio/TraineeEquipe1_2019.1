@@ -24,7 +24,9 @@
       <h5><span id="codigoSenior"><span id="span" class="botaonavegacao">Código Sênior</span></h5>
 
       <li class="nav-item" style="text-align: center;">
-        <a class="nav-link corzinha" id="cubocentral"><i class="fas fa-cube botao-cubo"></i>
+        <a class="nav-link corzinha setadireita"><i class="fas fa-angle-double-right"></i>
+        </a>
+        <a class="nav-link corzinha setaesquerda"><i class="fas fa-angle-double-left"></i>
         </a>
       </li>
       <li class="nav-item">
@@ -102,7 +104,13 @@
     </div>
 
 
-    <script src="../js/navbar.js"></script>
+    <script>
+      document.getElementById("cubocentral").addEventListener("click", myfunction);
+
+      function myfunction() {
+
+      }
+      <script src="../js/navbar.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
