@@ -10,7 +10,8 @@ nav.addEventListener("mouseenter", function () {
         botao[index].classList.remove("botaonavegacao");
 
     }
-
+    fechar.classList.remove("setaesquerda");
+    abrir.classList.remove("setaesquerda");
 });
 
 nav.addEventListener("mouseleave", function () {
@@ -20,16 +21,20 @@ nav.addEventListener("mouseleave", function () {
         botao[index].classList.add("botaonavegacao");
 
     }
+    fechar.classList.remove("setaesquerda");
+    abrir.classList.remove("setaesquerda");
 
 });
 
-abrir.addEventListener("click", function() {
+abrir.addEventListener("click", function () {
 
     nav.classList.remove("larguraNavbar");
     for (let index = 0; index < botao.length; index++) {
         botao[index].classList.remove("botaonavegacao");
 
     }
+    fechar.classList.remove("setaesquerda");
+    abrir.classList.remove("setaesquerda");
 });
 
 fechar.addEventListener("click", function () {
@@ -39,5 +44,7 @@ fechar.addEventListener("click", function () {
         botao[index].classList.add("botaonavegacao");
 
     }
+    fechar.classList.remove("setaesquerda");
+    abrir.classList.remove("setaesquerda");
 
 });
