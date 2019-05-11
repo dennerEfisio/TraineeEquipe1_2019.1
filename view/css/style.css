@@ -1,12 +1,13 @@
 .navegacao-lateral {
     background-color: #4682B4;
     font-family: 'Montserrat', sans-serif;
-    width: 0;
     height: 100vh;
+    width: 3vw;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     position: fixed;
     padding-top: 20px;
+    -webkit-transition: width 1s ease;
 }
 
 .corzinha {
@@ -78,16 +79,8 @@ h5 {
     margin-top: 3vh;
 }
 
-.navegacao-lateral {
-    width: 15vw;
-    -webkit-transition: width 1s ease;
-}
-
 @media all and (max-width: 700px) {
-    .navegacao-lateral {
-        /* width: 15vw; */
-    }
-}
+
     .navegacao-lateral {
         /* width: 50vw; */
         -webkit-animation-name: comeBackSmaller;
@@ -113,7 +106,17 @@ h5 {
             width: 50px;
         }
     }
+}
     .contTableListagem {
         background-color: white;
         border-radius: 10px;
+    }
+
+    .larguraNavbar{
+        width: 15vw;
+    }
+
+    #dash{
+        width: 0;
+        height: 0;
     }
