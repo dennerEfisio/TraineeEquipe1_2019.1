@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.corzinha{
+    text-decoration: none;
+    display: block;
+    padding: 16px 5px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icone{
+    margin-right: 5px;
+}
+
+.cubocentral{
+    color: steelblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav{
+    background-color: steelblue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.8;
+    height: 100%;
+    width: 14vw;
+    left: -20vw;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(20vw);
+}
+
+a:hover{
+    transform: scale(1.1);
+    margin-left: 1vw;
+}
+
+label{
+    top: 5vh;
+    left: 5vw;
+    position: absolute;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}

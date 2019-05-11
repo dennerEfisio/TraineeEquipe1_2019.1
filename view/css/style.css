@@ -1,30 +1,3 @@
-.navegacao-lateral {
-    background-color: #4682B4;
-    font-family: 'Montserrat', sans-serif;
-    height: 100vh;
-    width: 3vw;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    position: fixed;
-    padding-top: 20px;
-    -webkit-transition: width 1s ease;
-}
-
-.corzinha {
-    color: white !important;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.corzinha:hover {
-    transform: scale(1.1);
-    
-}
-
-h5 {
-    color: white;
-    text-align: center;
-}
 
 .tipo-criar {
     display: flex;
@@ -77,49 +50,4 @@ h5 {
     font-family: 'Montserrat', sans-serif;
     color: steelblue;
     margin-top: 3vh;
-}
-
-@media all and (max-width: 700px) {
-    .navegacao-lateral {
-        /* width: 50vw; */
-        -webkit-animation-name: comeBackSmaller;
-        -webkit-animation-duration: 0.8s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: 1;
-    }
-    @-webkit-keyframes comeBackSmaller {
-        0% {
-            opacity: 1.0;
-            width: 100px;
-        }
-        25% {
-            opacity: 0.0;
-            width: 75px;
-        }
-        50% {
-            opacity: 0.0;
-            width: 25px;
-        }
-        100% {
-            opacity: 1.0;
-            width: 50px;
-        }
-    }
-}
-
-.setaesquerda{
-    display: none;
-}
-
-.contTableListagem {
-    background-color: white;
-    border-radius: 10px;
-}
-
-.larguraNavbar {
-    width: 15vw;
-}
-
-.botaonavegacao {
-    display: none;
 }
