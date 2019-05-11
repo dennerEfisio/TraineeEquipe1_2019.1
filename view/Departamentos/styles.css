@@ -4,94 +4,6 @@ Preto
 Steel Blue
 White
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.barraNavegacao {
-    background-color: steelblue;
-    color: white;
-}
-
-.titleDepartamento {
-    color: whitesmoke;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.subtitleDepartamento {
-    color: whitesmoke;
-    text-align: center;
-    height: 10px;
-}
-
-.containerEditar {
-    margin-top: 150px;
-}
-
-.criarUsuario {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    padding: 20px 20px;
-}
-
-.edicaoUsuario {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    padding: 20px 20px;
-}
-
-.listaDepartamentos {
-    padding: 50px 50px;
-}
-
-.tipo-criar {
-    display: flex;
-    justify-content: center;
-    color: #282828;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.navegacao {
-    font-family: 'Orbitron', sans-serif;
-}
-
-.navbar-brand {
-    font-size: 35px !important;
-}
-
-button {
-    margin: 5px;
-}
-
-.listaResponsiva {
-    margin-top: 50px;
-}
-
-.verMaisLista{
-    
-}
-
-body {
-    background-color: grey;
-}
-
-.form-group {
-    background-color: steelblue;
-}
-
-.VerMais {
-    text-decoration-style: none;
-    text-decoration: none
-}  */
-
 /* Body */
 
 body {
@@ -107,10 +19,15 @@ h2 {
     font-size: 25px;
 }
 
+.btn {
+    color: steelblue;
+    border-color: steelblue;
+}
+
 /* NavBar */
 
 .barraNavegacao {
-    background-color: #4682B4;
+    background-color: steelblue;
     color: white;
     padding-left: 30px;
     padding-top: 15px;
@@ -146,6 +63,11 @@ h2 {
 .listaResponsiva {
     margin-bottom: 50px;
     margin-top: 10px;
+}
+
+.ElementosLista:hover {
+    background-color: #7ab1e6;
+    color: white;
 }
 
 .VerMais {
