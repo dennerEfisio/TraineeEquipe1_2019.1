@@ -1,6 +1,6 @@
 .navProjeto
 {
- height: 50px;
+ height: 5%;
 }
 
 .contCardEspecifico
@@ -11,20 +11,20 @@ justify-content: center;
 margin-top: 10%;
 background-color: white;
 border: 1px black solid;
-width: 30%;
+width: 60%;
 }
 
 .cardEspecifico
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .card-buttons button
 {
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .contTableListagem
@@ -35,7 +35,7 @@ width: 30%;
 
 .contTableListagem button 
 {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 .tituloProjeto
