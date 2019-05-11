@@ -1,6 +1,6 @@
 var botao = document.querySelectorAll("#span");
-var abrir = document.getElementsByClassName("setadireita");
-var fechar = document.getElementsByClassName("setaesquerda");
+var abrir = document.querySelector(".setadireita");
+var fechar = document.querySelector(".setaesquerda");
 var nav = document.getElementById("sidenavbar");
 
 nav.addEventListener("mouseenter", function () {
@@ -10,8 +10,8 @@ nav.addEventListener("mouseenter", function () {
         botao[index].classList.remove("botaonavegacao");
 
     }
-    fechar.classList.remove("setaesquerda");
-    abrir.classList.remove("setaesquerda");
+    fechar.classList.remove("setadireita");
+    abrir.classList.add("setaesquerda");
 });
 
 nav.addEventListener("mouseleave", function () {
@@ -21,8 +21,8 @@ nav.addEventListener("mouseleave", function () {
         botao[index].classList.add("botaonavegacao");
 
     }
-    fechar.classList.remove("setaesquerda");
-    abrir.classList.remove("setaesquerda");
+    fechar.classList.remove("setadireita");
+    abrir.classList.add("setaesquerda");
 
 });
 
@@ -33,8 +33,8 @@ abrir.addEventListener("click", function () {
         botao[index].classList.remove("botaonavegacao");
 
     }
-    fechar.classList.remove("setaesquerda");
-    abrir.classList.remove("setaesquerda");
+    fechar.classList.remove("setadireita");
+    abrir.classList.add("setaesquerda");
 });
 
 fechar.addEventListener("click", function () {
@@ -44,7 +44,7 @@ fechar.addEventListener("click", function () {
         botao[index].classList.add("botaonavegacao");
 
     }
-    fechar.classList.remove("setaesquerda");
-    abrir.classList.remove("setaesquerda");
+    fechar.classList.remove("setadireita");
+    abrir.classList.add("setaesquerda");
 
 });
