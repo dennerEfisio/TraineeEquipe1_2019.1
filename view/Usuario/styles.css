@@ -1,0 +1,32 @@
+/* Cores
+
+Primária: white
+Secundária: black
+Resto: steelblue padrao, #7ab1e6 Light, #005684 Dark
+
+*/
+
+/* body */
+
+.barraNavegacao{
+    background-color: #7ab1e6;
+}
+
+.botaoPadrao {
+    color: steelblue;
+    border-color: steelblue;
+}
+
+.botaoPadrao:hover{
+    background-color: #7ab1e6;
+}
+
+
+
+/* Criar Usuario */
+
+.containerCriarUsuario {
+    color: steelblue;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}

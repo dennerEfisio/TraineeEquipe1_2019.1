@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Departamentos</title>
+    <title>Usuário</title>
 
 </head>
 
@@ -61,7 +61,50 @@
 
     <div class="container">
 
-    
+        <form>
+            <div class="form-row containerCriarUsuario">
+
+                <div class="form-group col-md-6">
+                    <label for="criarUsuarioNome">Nome</label>
+                    <input type="text" class="form-control" id="criarUsuarioNome" placeholder="Nome" required>
+                </div>
+                    <div class="form-group col-md-6">
+                        <label for="criarUsuarioSobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="criarUsuarioSobrenome" placeholder="Sobrenome" required\>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="adicionarEmail">Email</label>
+                        <input type="email" class="form-control" id="adicionarEmail" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="adicionarSenha">Senha</label>
+                        <input type="password" class="form-control" id="adicionarSenha" placeholder="Crie Sua Senha"
+                            required>
+                    </div>
+
+                <div class="form-group col-md-3">
+                    <label for="adicionarCargo">Cargo</label>
+                    <select id="adicionarCargo" class="form-control" required>
+                        <option selected>Escolha</option>
+                        <option>Trainee</option>
+                        <option>Projetista</option>
+                        <option>Gerencia</option>
+                    </select>
+                
+
+                </div>
+
+                </div>
+            
+                <button type="submit" class="btn btn-outline-primary botaoPadrao">Enviar</button>
+
+            </div>
+
+        </form>
+
+    </div>
 
 </body>
 
