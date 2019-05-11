@@ -9,20 +9,12 @@
     font-weight: bold;
 }
 
-.intro-criando {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: steelblue;
-}
-
 .editando-cliente {
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-.intro-editando {
+.intro {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -32,24 +24,6 @@
 
 .listagem-clientes {
     margin-top: 5vh;
-}
-
-.intro-listando {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: steelblue;
-    margin-top: 3vh;
-}
-
-.intro-vendo-mais {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: steelblue;
-    margin-top: 3vh;
 }
 
 .cliente-item-vermais {
