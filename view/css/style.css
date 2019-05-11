@@ -11,14 +11,14 @@
 }
 
 .corzinha {
-    color: white;
+    color: white !important;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
 .corzinha:hover {
-    color: #1E90FF;
     transform: scale(1.1);
+    
 }
 
 h5 {
@@ -80,7 +80,6 @@ h5 {
 }
 
 @media all and (max-width: 700px) {
-
     .navegacao-lateral {
         /* width: 50vw; */
         -webkit-animation-name: comeBackSmaller;
@@ -107,16 +106,16 @@ h5 {
         }
     }
 }
-    .contTableListagem {
-        background-color: white;
-        border-radius: 10px;
-    }
 
-    .larguraNavbar{
-        width: 15vw;
-    }
+.contTableListagem {
+    background-color: white;
+    border-radius: 10px;
+}
 
-    #dash{
-        width: 0;
-        height: 0;
-    }
+.larguraNavbar {
+    width: 15vw;
+}
+
+.botaonavegacao {
+    display: none;
+}
