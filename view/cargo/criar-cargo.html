@@ -22,31 +22,33 @@
 
   <!---------------------------------------------------------NAVEGACAO--------------------------------------------------------------------->
 
-  <h2 class="criando-cargo">Crie o cargo do cliente</h2>
+  <div class="container">
+    <h2 class="criando-cargo">Crie o cargo do cliente</h2>
 
-  <div class="container cargo-criar">
-    <form class="d-flex justify-content-around">
-      <div class="form-row">
-        <div class="form-group col-8">
-          <label for="exampleFormControlInput1">Nome</label>
-          <input type="text" class="form-control" id="nomecargo" placeholder="NOME" required>
+    <div class="container cargo-criar">
+      <form class="d-flex justify-content-around">
+        <div class="form-row">
+          <div class="form-group col-8">
+            <label for="exampleFormControlInput1">Nome</label>
+            <input type="text" class="form-control" id="nomecargo" placeholder="NOME" required>
+          </div>
+          <div class="form-group col-4">
+            <label for="departamentocargo">Departamento</label>
+            <select class="form-control" id="departamentocargo" required>
+              <option>Selecione o departamento</option>
+              <option>Gerente</option>
+              <option>Diretor</option>
+              <option>Presidente</option>
+              <option>Projetista</option>
+              <option>Consultor</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group col-4">
-          <label for="departamentocargo">Departamento</label>
-          <select class="form-control" id="departamentocargo" required>
-            <option>Selecione o departamento</option>
-            <option>Gerente</option>
-            <option>Diretor</option>
-            <option>Presidente</option>
-            <option>Projetista</option>
-            <option>Consultor</option>
-          </select>
-        </div>
+      </form>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-dark botaozinho">Voltar</button>
+        <button type="button" class="btn btn-outline-primary botaozinho">Criar</button>
       </div>
-    </form>
-    <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-outline-dark botaozinho">Voltar</button>
-      <button type="button" class="btn btn-outline-primary botaozinho">Criar</button>
     </div>
   </div>
 
