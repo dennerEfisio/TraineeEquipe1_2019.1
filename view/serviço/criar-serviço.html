@@ -67,15 +67,15 @@
 		<form class="formServiço">
 			<div class="form-group nomeCriarServiço">
 				<label>Nome:</label>
-				<input type="nome" class="form-control" id="criarServiçoNome" placeholder="Nome do Serviço" required>
+				<input type="text" class="form-control" id="criarServiçoNome" placeholder="Nome do Serviço" required>
 			</div>
 			<div class="form-group preçoCriarServiço">
 				<label>Preço:</label>
-				<input type="Preço" class="form-control" id="criarServiçoPreço" placeholder="Valor do Serviço" required>
+				<input type="number" step="0.01" class="form-control" id="criarServiçoPreço" placeholder="Valor do Serviço" required>
 			</div>
 			<div class="form-group descontoCriarServiço">
-				<label>Desconto:</label>
-				<input type="Desconto" class="form-control" id="criarServiçoDesconto" placeholder="Valor do desconto">
+				<label>Desconto em %:</label>
+				<input type="number" class="form-control" id="criarServiçoDesconto" placeholder="Valor do desconto">
 			</div>
 			<div class="form-group anotaçãoCriarServiço">
 				<label>Anotações sobre o serviço:</label>
@@ -83,7 +83,7 @@
 			</div>
 			<div class="form-group dataCriarServiço">
 				<label>Data da Venda</label>
-				<input type="Data" class="form-control" id="criarServiçoData" placeholder="**/**/****" required>
+				<input type="date" class="form-control" id="criarServiçoData" placeholder="**/**/****" required>
 			</div>
 			<div class="form-group clienteCriarServiço">
 				<label for="inputState">Cliente:</label>

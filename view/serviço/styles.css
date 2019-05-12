@@ -5,19 +5,25 @@
 
 .contCardEspecificoServiço
 {
-border-radius: 10px;
 display: flex;
 justify-content: center;
-margin-top: 10%;
+margin-top: 5%;
+margin-bottom: 5%;
 background-color: white;
-border: 1px black solid;
 }
 
 .cardEspecificoServiço
 {
-    padding-top: 1%;
     padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px;
 }
+
+.tituloCardServiço
+{
+ border-top:none
+}
+
 
 .card-buttons button
 {

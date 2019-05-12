@@ -67,15 +67,15 @@
 			<form class="formServiço">
 				<div class="form-group nomeEditarServiço">
 					<label>Nome:</label>
-					<input type="nome" class="form-control" id="EditarServiçoNome" value="Exemplo" required>
+					<input type="text" class="form-control" id="EditarServiçoNome" value="Exemplo" required>
 				</div>
 				<div class="form-group preçoEditarServiço">
 					<label>Preço:</label>
-					<input type="Preço" class="form-control" id="EditarServiçoPreço" Value="R$ 1000.00" required>
+					<input type="number" step="0.01" class="form-control" id="EditarServiçoPreço" Value="1000.00" required>
 				</div>
 				<div class="form-group descontoEditarServiço">
-					<label>Desconto:</label>
-					<input type="Desconto" class="form-control" id="EditarServiçoDesconto" value="10%">
+					<label>Desconto em %:</label>
+					<input type="number" class="form-control" id="EditarServiçoDesconto" value="10">
 				</div>
 				<div class="form-group anotaçãoEditarServiço">
 					<label>Anotações sobre o serviço:</label>
@@ -83,7 +83,7 @@
 				</div>
 				<div class="form-group dataEditarServiço">
 					<label>Data da Venda</label>
-					<input type="Data" class="form-control" id="EditarServiçoData" value="25/11/1998" required>
+					<input type="date" class="form-control" id="EditarServiçoData" value="25/11/1998" required>
 				</div>
 				<div class="form-group clienteEditarServiço">
 					<label for="inputState">Cliente:</label>
