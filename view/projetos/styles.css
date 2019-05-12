@@ -3,37 +3,37 @@
  height: 5%;
 }
 
-.contCardEspecifico
+.contCardEspecificoProjeto
 {
-border-radius: 10px;
 display: flex;
 justify-content: center;
-margin-top: 10%;
+margin-top: 5%;
+margin-bottom: 5%;
 background-color: white;
-border: 1px black solid;
-width: 60%;
 }
 
-.cardEspecifico
+.cardEspecificoProjeto
 {
     padding-top: 1%;
     padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px black solid;
 }
 
-.card-buttons button
+.cardButtonsProjeto button
 {
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.contTableListagem
+.contTableListagemProjeto
 {
     background-color: white;
     border-radius: 10px;
 }
 
-.contTableListagem button 
+.contTableListagemProjeto button 
 {
     margin-bottom: 1%;
 }
