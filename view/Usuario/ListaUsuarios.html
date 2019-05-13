@@ -19,7 +19,7 @@
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light barraNavegacao">
+        <nav class="navbar navbar-expand-lg navbar-primary barraNavegacao">
             <a class="navbar-brand" href="#">CÓDIGO SÊNIOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,57 +59,46 @@
         </nav>
     </div>
 
-    <div class="container ">
+    <div class="container">
 
-        <form>
-            <div class="form-row align-items-center containerCriarUsuario">
+            <table class="table table-bordered table-hover listaResponsivaUsuarios">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Sobrenome</th>
+                        <th scope="col">Departamento</th>
+                        <th scope="col">Cargo</th>
+                        <th scope="col">+</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td >Josué</td>
+                        <td >Heringer</td>
+                        <td >Projetos</td>
+                        <td >Projetista</td>
+                        <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td >Eleno</td>
+                        <td >Elenão</td>
+                        <td >GP</td>
+                        <td >Diretor</td>
+                        <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2" >Larry the Bird</td>
+                        <td >Eco</td>
+                        <td >PassarOlhando</td>
+                        <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
 
-                <div class="form-group col-md-6">
-                    <label for="criarUsuarioNome">Nome</label>
-                    <input type="text" class="form-control" id="criarUsuarioNome" placeholder="Nome" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="criarUsuarioSobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="criarUsuarioSobrenome" placeholder="Sobrenome"
-                        required\>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="adicionarEmail">Email</label>
-                    <input type="email" class="form-control" id="adicionarEmail" placeholder="Email" required>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="adicionarSenha">Senha</label>
-                    <input type="password" class="form-control" id="adicionarSenha" placeholder="Crie Sua Senha"
-                        required>
-                </div>
-
-                <div class="form-group col-md-6 inserirFotoUsuario">
-                    <label for="inserirFotoUsuario">Inserir arquivo de imagem</label>
-                    <input type="file" class="form-control-file" id="inserirImagemUsuario">
-                </div>
-
-
-                <div class="form-group col-md-3">
-                    <label for="adicionarCargo">Cargo</label>
-                    <select id="adicionarCargo" class="form-control" required>
-                        <option selected></option>
-                        <option>Trainee</option>
-                        <option>Projetista</option>
-                        <option>Gerencia</option>
-                    </select>
-
-
-                </div>
-
-            </div>
-
-            <button type="submit" class="btn btn-outline-primary botaoPadrao">Enviar</button>
-
-    </div>
-
-    </form>
 
     </div>
 
@@ -124,7 +113,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    </div>
 
 </body>
 
