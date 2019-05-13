@@ -11,10 +11,6 @@ body {
     background-color: white;
 }
 
-h2 {
-    font-size: 30px;
-}
-
 .formh2 {
     font-size: 25px;
 }
@@ -44,6 +40,7 @@ h2 {
 .subtitleDepartamento {
     margin-bottom: 15px;
     margin-top: 30px;
+    font-size: 30px;
 }
 
 .subtitleDepartamentoLista {

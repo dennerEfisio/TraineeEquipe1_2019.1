@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Departamentos</title>
+    <title>Tipos</title>
 
 </head>
 
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#">Tipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Departamento</a>
+                        <a class="nav-link" href="#">Tipo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cargo</a>
@@ -61,36 +61,16 @@
 
     <div class="container">
 
-        <h2 class="subtitleDepartamento subtitleDepartamentoLista">Listagem Departamentos</h2>
+        <h2 class="subtitleTipo">Adicionar Tipo</h2>
 
-        <button type="button" class="btn btn-outline-primary btn-sm botaoSubmit">Novo Departamento</button>
-
-        <table class="table table-bordered listaResponsiva">
-            <thead>
-                <tr>
-                    <th scope="col" >#</th>
-                    <th scope="col" >Departamentos</th>
-                    <th scope="col" >+</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="ElementosLista">
-                    <th scope="row" >1</th>
-                    <td >Projetos</td>
-                    <td ><a href="#" class="badge badge-primary botaoVerMais">Ver Mais</a></td>
-                </tr>
-                <tr class="ElementosLista">
-                    <th scope="row" >2</th>
-                    <td >Gerencia</td>
-                    <td ><a href="#" class="badge badge-primary botaoVerMais">Ver Mais</a></td>
-                </tr>
-                <tr class="ElementosLista">
-                    <th scope="row" >3</th>
-                    <td >Presidencia</td>
-                    <td ><a href="#" class="badge badge-primary botaoVerMais">Ver Mais</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <form>
+            <div class="form-group caixaInserirTipo formh2">
+                <label for="adicionarTipo">Tipo</label>
+                <input type="text" class="form-control inserirTipo" id="usuarioTipo" required
+                    placeholder="Inserir Tipo">
+                <button type="submit" class="btn btn-outline-primary botaoNovoUsuario botaoSubmitCancel botaoSubmit">Enviar</button>
+            </div>
+        </form>
 
     </div>
 
