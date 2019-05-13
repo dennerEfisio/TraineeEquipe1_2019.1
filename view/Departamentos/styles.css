@@ -77,7 +77,7 @@ h2 {
 
 /* Pagina Edição Departamento */
 
-.edicaoUsuario {
+.edicaoDepartamento {
     margin-top: 20px;
     margin-bottom: 80px;
 }
@@ -99,4 +99,10 @@ h2 {
 
 .botaoSubmitCancel {
     margin-top: 15px;
+}
+
+.botaoSubmit:hover {
+    color: white;
+    background-color: #7ab1e6;
+    border-color: #7ab1e6;
 }
