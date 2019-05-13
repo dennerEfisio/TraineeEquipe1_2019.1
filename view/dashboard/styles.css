@@ -1,0 +1,28 @@
+.contDashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.dashboardCard1 {
+    width: 40%;
+}
+
+.dashboardCard2 {
+    width: 40%;
+}
+
+.dashboardCard3 {
+    width: 40%;
+}
+
+.dashboardCard4 {
+    width: 40%;
+}
+
+.tituloDashboard {
+    margin-left: 2%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
