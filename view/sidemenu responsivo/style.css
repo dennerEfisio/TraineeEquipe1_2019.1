@@ -1,31 +1,30 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.corzinha{
+
+.corzinha {
     text-decoration: none;
     display: block;
     padding: 16px 5px;
-    color:white;
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-.icone{
+.icone {
     margin-right: 5px;
 }
 
-.cubocentral{
+.icone-menu {
     color: steelblue;
     font-size: 30px;
-    text-align: center;
 }
 
-input[type="checkbox"]
-{
+input[type="checkbox"] {
     display: none;
 }
 
-nav{
+nav {
     background-color: steelblue;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -37,29 +36,29 @@ nav{
     transition: all 0.5s;
 }
 
-input[type="checkbox"]:checked ~ nav{
+input[type="checkbox"]:checked~nav {
     transform: translateX(180px);
 }
 
-@media (max-width : 380px) {
-    .cubocentral{
+@media (max-width: 380px) {
+    .icone-menu {
         margin-left: 30px;
     }
 }
 
-a:hover{
+a:hover {
     transform: scale(1.1);
     margin-left: 1vw;
 }
 
-label{
+label {
     top: 5vh;
     left: 5vw;
     position: absolute;
     z-index: 1;
 }
 
-ul{
+ul {
     list-style: none;
     top: 70px;
     position: absolute;
