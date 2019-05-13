@@ -17,24 +17,20 @@ body {
     background-color: #7ab1e6;
 }
 
-
-
 .botaoPadrao {
     color: steelblue;
     border-color: steelblue;
 }
 
-.botaoPadrao:hover{
+.botaoPadrao:hover {
     background-color: #7ab1e6;
 }
-
-
 
 /* Criar Usuario */
 
 .containerCriarUsuario {
     color: steelblue;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
     width: 80%;
     display: flex;
@@ -46,10 +42,9 @@ body {
 
 /* Editar Usuário */
 
-
 .containerEditarUsuario {
     color: steelblue;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
     width: 80%;
     display: flex;
@@ -59,9 +54,8 @@ body {
 
 .listaResponsivaUsuarios {
     border-color: black;
-    margin-top: 80px;
+    margin-top: 60px;
     width: 80%;
-
 }
 
 .elementoParaHover:hover {
@@ -71,10 +65,11 @@ body {
 
 /* Usuario Especifico */
 
+.barraNavegacaoUsuarioEspecifico {
+    margin-bottom: 60px;
+}
+
 .cardUsuarioEspecifico {
-    max-width: 80%;
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-right: 20px;
-    position: absolute;
+    margin: 0 auto;
+    max-width: 35%;
 }
