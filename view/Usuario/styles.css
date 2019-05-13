@@ -1,0 +1,76 @@
+/* Cores
+
+Primária: white
+Secundária: black
+Resto: steelblue padrao, #7ab1e6 Light, #005684 Dark
+
+*/
+
+/* body */
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.barraNavegacao {
+    color: black;
+    background-color: #7ab1e6;
+    margin-bottom: 60px;
+}
+
+.botaoPadrao {
+    color: steelblue;
+    border-color: steelblue;
+}
+
+.botaoPadrao:hover {
+    background-color: #7ab1e6;
+}
+
+/* Criar Usuario */
+
+.containerCriarUsuario {
+    color: steelblue;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+}
+
+.inserirFotoUsuario {
+    padding-right: 10%
+}
+
+/* Editar Usuário */
+
+.containerEditarUsuario {
+    color: steelblue;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+}
+
+/* Lista Usuário */
+
+.listaResponsivaUsuarios {
+    border-color: black;
+    margin-top: 60px;
+    width: 80%;
+}
+
+.elementoParaHover:hover {
+    background-color: #7ab1e6;
+    color: white;
+}
+
+/* Usuario Especifico */
+
+.barraNavegacaoUsuarioEspecifico {
+    margin-bottom: 60px;
+}
+
+.cardUsuarioEspecifico {
+    margin: 0 auto;
+    max-width: 35%;
+}
