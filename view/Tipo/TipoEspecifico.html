@@ -12,14 +12,14 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Tipos</title>
+    <title>Usuário</title>
 
 </head>
 
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light barraNavegacao">
+        <nav class="navbar navbar-expand-lg navbar-primary barraNavegacao barraNavegacaoUsuarioEspecifico">
             <a class="navbar-brand" href="#">CÓDIGO SÊNIOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#">Tipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tipo</a>
+                        <a class="nav-link" href="#">Departamento</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cargo</a>
@@ -61,19 +61,17 @@
 
     <div class="container">
 
-        <h2 class="subtitleTipo">Adicionar Tipo</h2>
+        <div class="card cardTipoEspecifico">
+            <img src="https://www.codejr.com.br/img/computador-intro.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nome da Empresa</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Area de atuação</h6>
+                <p class="card-text">Pequeno texto sobre qual serviço prestamos a ela</p>
 
-        <form>
-            <div class="form-group caixaInserirTipo formh2">
-                <label for="adicionarTipo">Tipo</label>
-                <input type="text" class="form-control inserirTipo" id="usuarioTipo" required
-                    placeholder="Inserir Tipo">
-                <button type="submit" class="btn btn-outline-primary botaoNovoUsuario botaoPadrao"
-                    style="margin-top: 20px;">Enviar</button>
             </div>
-        </form>
-
+        </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

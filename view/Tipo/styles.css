@@ -1,105 +1,72 @@
-/*  Você consegue men, vamo que vamo
-Cores: 
-Preto
-Steel Blue
-White
+/* Cores
 
-/* Body */
+Primária: white
+Secundária: black
+Resto: steelblue padrao, #7ab1e6 Light, #005684 Dark
+
+*/
+
+/* body */
 
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: white;
 }
 
-.formh2 {
-    font-size: 25px;
+.barraNavegacao {
+    color: black;
+    background-color: #7ab1e6;
+    margin-bottom: 60px;
 }
 
-.btn {
+.botaoPadrao {
     color: steelblue;
     border-color: steelblue;
 }
 
-/* NavBar */
-
-.barraNavegacao {
-    background-color: steelblue;
-    color: white;
-    padding-left: 30px;
-    padding-top: 15px;
-    margin-bottom: 50px;
-}
-
-/* Titles Tipo */
-
-.titleTipo {
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-.subtitleTipo {
-    margin-bottom: 15px;
-    margin-top: 30px;
-    font-size: 30px;
-}
-
-.subtitleTipoLista {
-    margin-top: 50px;
-}
-
-/* Editar Tipo */
-
-.formEditar {
-    padding-top: 20px;
-    margin-bottom: 30px;
-    font-size: 30px;
-}
-
-/* listaTipo */
-
-.listaResponsiva {
-    margin-bottom: 50px;
-    margin-top: 10px;
-}
-
-.ElementosLista:hover {
+.botaoPadrao:hover {
     background-color: #7ab1e6;
-    color: white;
 }
 
-.VerMais {
-    text-decoration-style: none;
-    text-decoration: none
-}
+/* Criar Usuario */
 
-/* Pagina Edição Tipo */
-
-.edicaoTipo {
-    margin-top: 20px;
-    margin-bottom: 80px;
-}
-
-/* Table Lista */
-
-.listaResponsiva {
-    background-color: white;
+.containerCriarTipo {
     color: steelblue;
-    border-width: 3px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
 }
 
-.botaoVerMais {
-    background-color: white;
-    color: black;
+/* Editar Usuário */
+
+.containerEditarTipo {
+    color: steelblue;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
 }
 
-/* Botões Geral */
+/* Lista Tipos */
 
-.botaoSubmitCancel {
-    margin-top: 15px;
+.listaResponsivaTipos {
+    border-color: black;
+    margin-top: 60px;
+    width: 80%;
 }
 
-.botaoSubmit:hover {
-    color: white;
+.elementoParaHover:hover {
     background-color: #7ab1e6;
-    border-color: #7ab1e6;
+    color: white;
+}
+
+/* Tipo Especifico */
+
+.barraNavegacaoTipoEspecifico {
+    margin-bottom: 60px;
+}
+
+.cardTipoEspecifico {
+    margin: 0 auto;
+    max-width: 35%;
 }

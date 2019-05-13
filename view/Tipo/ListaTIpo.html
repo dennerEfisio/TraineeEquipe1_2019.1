@@ -12,14 +12,14 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Tipos</title>
+    <title>Usuário</title>
 
 </head>
 
 <body>
 
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light barraNavegacao">
+        <nav class="navbar navbar-expand-lg navbar-primary barraNavegacao">
             <a class="navbar-brand" href="#">CÓDIGO SÊNIOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#">Tipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tipo</a>
+                        <a class="nav-link" href="#">Departamento</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cargo</a>
@@ -61,17 +61,44 @@
 
     <div class="container">
 
-        <h2 class="subtitleTipo">Adicionar Tipo</h2>
+        <table class="table table-bordered table-hover listaResponsivaUsuarios">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sobrenome</th>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Ramo</th>
+                    <th scope="col">+</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Josué</td>
+                    <td>Heringer</td>
+                    <td>Code JR</td>
+                    <td>TI</td>
+                    <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Eleno</td>
+                    <td>Elenão</td>
+                    <td>Code Socio-Democrata</td>
+                    <td>Político</td>
+                    <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>EcoLogics</td>
+                    <td>Naturebas</td>
+                    <td><a href="#" class="badge badge-outline">Ver Mais</a></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <form>
-            <div class="form-group caixaInserirTipo formh2">
-                <label for="adicionarTipo">Tipo</label>
-                <input type="text" class="form-control inserirTipo" id="usuarioTipo" required
-                    placeholder="Inserir Tipo">
-                <button type="submit" class="btn btn-outline-primary botaoNovoUsuario botaoPadrao"
-                    style="margin-top: 20px;">Enviar</button>
-            </div>
-        </form>
 
     </div>
 
