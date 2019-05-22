@@ -11,10 +11,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.icone {
-    margin-right: 5px;
-}
-
 .icone-menu {
     color: steelblue;
     font-size: 30px;
@@ -40,6 +36,10 @@
     transform: translateX(180px);
 }
 
+.menu-checkbox[type="checkbox"]:checked~.rotulo{
+    transform: rotate(180deg);
+}
+
 @media (max-width: 380px) {
     .icone-menu {
         margin-left: 30px;
@@ -52,8 +52,8 @@
 }
 
 .rotulo {
-    top: 5vh;
-    left: 5vw;
+    top: 1vh;
+    left: 2vw;
     position: absolute;
     z-index: 1;
 }
