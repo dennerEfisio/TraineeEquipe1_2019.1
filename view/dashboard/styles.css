@@ -7,18 +7,22 @@
 
 .dashboardCard1 {
     width: 45%;
+    margin-bottom: 5%;
 }
 
 .dashboardCard2 {
     width: 45%;
+    margin-bottom: 5%;
 }
 
 .dashboardCard3 {
     width: 45%;
+    margin-bottom: 5%;
 }
 
 .dashboardCard4 {
     width: 45%;
+    margin-bottom: 5%;
 }
 
 .tituloDashboard {
@@ -29,6 +33,7 @@
 
 .footer {
     background-color: #D9D9D9;
+    size: 99%;
     color: black;
     height: 50px;
 }
