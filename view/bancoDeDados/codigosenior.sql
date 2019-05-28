@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Maio-2019 às 22:00
+-- Generation Time: 29-Maio-2019 às 01:40
 -- Versão do servidor: 10.1.40-MariaDB
 -- versão do PHP: 7.3.5
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cargo` (
-  `idCargo` int(11) NOT NULL,
-  `nomeCargo` varchar(255) NOT NULL,
-  `departamentoRef` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `departamento_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -41,18 +41,18 @@ CREATE TABLE `cargo` (
 --
 
 CREATE TABLE `cliente` (
-  `idCliente` int(11) NOT NULL,
-  `nomeCliente` varchar(255) NOT NULL,
-  `sobrenomeCliente` varchar(255) NOT NULL,
-  `cpfCliente` varchar(255) NOT NULL,
-  `emailCliente` varchar(255) NOT NULL,
-  `cidadeCliente` varchar(255) DEFAULT NULL,
-  `bairroCliente` varchar(255) DEFAULT NULL,
-  `ruaCliente` varchar(255) DEFAULT NULL,
-  `numeroCliente` int(11) DEFAULT NULL,
-  `complementoCliente` varchar(255) DEFAULT NULL,
-  `anotacoesCliente` varchar(255) DEFAULT NULL,
-  `tipoRef` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `sobrenome` varchar(255) NOT NULL,
+  `cpf` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `cidade` varchar(255) DEFAULT NULL,
+  `bairro` varchar(255) DEFAULT NULL,
+  `rua` varchar(255) DEFAULT NULL,
+  `numero` int(11) DEFAULT NULL,
+  `complemento` varchar(255) DEFAULT NULL,
+  `anotacoes` varchar(255) DEFAULT NULL,
+  `tipo_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -62,8 +62,8 @@ CREATE TABLE `cliente` (
 --
 
 CREATE TABLE `departamento` (
-  `idDep` int(11) NOT NULL,
-  `nomeDep` varchar(255) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -73,9 +73,9 @@ CREATE TABLE `departamento` (
 --
 
 CREATE TABLE `projeto` (
-  `idProjeto` int(11) NOT NULL,
-  `nomeProjeto` varchar(255) NOT NULL,
-  `descricaoProjeto` varchar(255) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `descricao` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -85,15 +85,15 @@ CREATE TABLE `projeto` (
 --
 
 CREATE TABLE `servico` (
-  `idServico` int(11) NOT NULL,
-  `nomeServico` varchar(255) NOT NULL,
-  `descontoServico` float DEFAULT NULL,
-  `precoServico` float NOT NULL,
-  `anotacoesServico` longtext,
-  `dataVendaServico` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `clienteRef` int(11) NOT NULL,
-  `produtoRef` int(11) NOT NULL,
-  `usuarioRef` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `desconto` float DEFAULT NULL,
+  `preco` float NOT NULL,
+  `anotacoes` longtext,
+  `data_venda` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `cliente_id` int(11) NOT NULL,
+  `produto_id` int(11) NOT NULL,
+  `usuario_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -103,8 +103,8 @@ CREATE TABLE `servico` (
 --
 
 CREATE TABLE `tipo` (
-  `idTipo` int(11) NOT NULL,
-  `nomeTipo` varchar(255) NOT NULL
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -114,12 +114,12 @@ CREATE TABLE `tipo` (
 --
 
 CREATE TABLE `usuario` (
-  `idUsuario` int(11) NOT NULL,
-  `nomeUsuario` varchar(255) NOT NULL,
-  `emailUsuario` varchar(255) NOT NULL,
-  `senhaUsuario` varchar(255) NOT NULL,
-  `cargoRef` int(11) NOT NULL,
-  `url_imagemUsuario` mediumtext
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `cargo_id` int(11) NOT NULL,
+  `url_imagem` mediumtext
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -130,49 +130,49 @@ CREATE TABLE `usuario` (
 -- Indexes for table `cargo`
 --
 ALTER TABLE `cargo`
-  ADD PRIMARY KEY (`idCargo`),
-  ADD KEY `departamento` (`departamentoRef`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `departamento` (`departamento_id`);
 
 --
 -- Indexes for table `cliente`
 --
 ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`idCliente`),
-  ADD KEY `tipoRef` (`tipoRef`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `tipoRef` (`tipo_id`);
 
 --
 -- Indexes for table `departamento`
 --
 ALTER TABLE `departamento`
-  ADD PRIMARY KEY (`idDep`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `projeto`
 --
 ALTER TABLE `projeto`
-  ADD PRIMARY KEY (`idProjeto`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `servico`
 --
 ALTER TABLE `servico`
-  ADD PRIMARY KEY (`idServico`),
-  ADD KEY `clienteRef` (`clienteRef`),
-  ADD KEY `produtoRef` (`produtoRef`),
-  ADD KEY `usuarioRef` (`usuarioRef`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `clienteRef` (`cliente_id`),
+  ADD KEY `produtoRef` (`produto_id`),
+  ADD KEY `usuarioRef` (`usuario_id`);
 
 --
 -- Indexes for table `tipo`
 --
 ALTER TABLE `tipo`
-  ADD PRIMARY KEY (`idTipo`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idUsuario`),
-  ADD KEY `cargoRef` (`cargoRef`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `cargoRef` (`cargo_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -182,43 +182,43 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `cargo`
 --
 ALTER TABLE `cargo`
-  MODIFY `idCargo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `departamento`
 --
 ALTER TABLE `departamento`
-  MODIFY `idDep` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `projeto`
 --
 ALTER TABLE `projeto`
-  MODIFY `idProjeto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `servico`
 --
 ALTER TABLE `servico`
-  MODIFY `idServico` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tipo`
 --
 ALTER TABLE `tipo`
-  MODIFY `idTipo` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
@@ -228,27 +228,27 @@ ALTER TABLE `usuario`
 -- Limitadores para a tabela `cargo`
 --
 ALTER TABLE `cargo`
-  ADD CONSTRAINT `cargo_ibfk_1` FOREIGN KEY (`departamentoRef`) REFERENCES `departamento` (`idDep`);
+  ADD CONSTRAINT `cargo_ibfk_1` FOREIGN KEY (`departamento_id`) REFERENCES `departamento` (`id`);
 
 --
 -- Limitadores para a tabela `cliente`
 --
 ALTER TABLE `cliente`
-  ADD CONSTRAINT `cliente_ibfk_1` FOREIGN KEY (`tipoRef`) REFERENCES `tipo` (`idTipo`);
+  ADD CONSTRAINT `cliente_ibfk_1` FOREIGN KEY (`tipo_id`) REFERENCES `tipo` (`id`);
 
 --
 -- Limitadores para a tabela `servico`
 --
 ALTER TABLE `servico`
-  ADD CONSTRAINT `servico_ibfk_1` FOREIGN KEY (`clienteRef`) REFERENCES `cliente` (`idCliente`),
-  ADD CONSTRAINT `servico_ibfk_2` FOREIGN KEY (`produtoRef`) REFERENCES `projeto` (`idProjeto`),
-  ADD CONSTRAINT `servico_ibfk_3` FOREIGN KEY (`usuarioRef`) REFERENCES `usuario` (`idUsuario`);
+  ADD CONSTRAINT `servico_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `cliente` (`id`),
+  ADD CONSTRAINT `servico_ibfk_2` FOREIGN KEY (`produto_id`) REFERENCES `projeto` (`id`),
+  ADD CONSTRAINT `servico_ibfk_3` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`);
 
 --
 -- Limitadores para a tabela `usuario`
 --
 ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`cargoRef`) REFERENCES `cargo` (`idCargo`);
+  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`cargo_id`) REFERENCES `cargo` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
