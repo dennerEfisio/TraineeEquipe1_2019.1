@@ -59,8 +59,20 @@
 }
 
 .navegacao-lateral {
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     list-style: none;
     top: 70px;
     position: absolute;
     width: 100%;
+}
+
+.titulo-navbar{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
 }
