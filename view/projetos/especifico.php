@@ -149,7 +149,7 @@
 					Libertar-se-á... nunca mais!</p>
 			</div>
 			<div class="cardButtonsProjeto">
-				<button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button>
+				<a href="editar-projetos.php" class="btn btn-outline-primary" role="button">Editar</a>
 				<button type="submit" class="btn btn-outline-danger" id="botaoDeletarProjetoEspecifico" data-toggle="modal"
 					data-target="#modalBotaoDeletarEspecifico">Deletar</button>
 			</div>
@@ -171,7 +171,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-					<button type="submit" class="btn btn-danger">Deletar</button>
+					<a href="process.php" class="btn btn-danger" role="button">Deletar</a>
 				</div>
 			</div>
 		</div>

@@ -31,7 +31,8 @@
 				<textarea class="form-control" id="EditarProjetoDescrição" rows="3" required></textarea>
 			</div>
 			<button type="submit" class="btn btn-outline-primary" id="botaoSalvarAlteracaoProjeto">Editar</button>
-			<button type="submit" class="btn btn-outline-danger" id="botaoCancelarAlteracaoProjeto">Cancelar</button>
+            <a href="listar-projetos.php" class="btn btn-outline-danger" role="button">Cancelar</a>
+            
 		</form>
 	</div>
 

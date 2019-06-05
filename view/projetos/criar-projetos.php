@@ -6,53 +6,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 
-	<title>Lista - Projetos</title>
+	<title>Criar - Projetos</title>
 </head>
 
 <body>
-	<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
+    <?php require_once 'process.php'; ?>
 
-	<div class="container contTableListagemProjeto">
-		<h1 class="tituloProjeto">Lista de Projetos</h1>
-		<div class="tableButton">
-			<button type="submit" class="btn btn-outline-primary" id="botaoNovoProjetoLista">Novo</button>
-		</div>
-		<table class="table table-hover table-bordered contTableListagemProjeto">
-			<thead>
-				<tr>
-					<td scope="col">#</td>
-					<td scope="col">Nome</td>
-					<td scope="col">Detalhes</td>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td scope="row">1</td>
-					<td>Projeto1</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-				<tr>
-					<td scope="row">2</td>
-					<td>Projeto2</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-				<tr>
-					<td scope="row">3</td>
-					<td>Projeto3</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-				<tr>
-					<td scope="row">3</td>
-					<td>Projeto4</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="container">
+		<h1 class="tituloProjeto">Criar Projeto</h1>
+		<form class="formProjeto" action="process.php" method="POST">
+			<div class="form-group nomeCriar">
+				<label>Nome:</label>
+				<input type="text" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto" required>
+			</div>
+			<div class="form-group descricaoCriar">
+				<label>Descrição do Projeto:</label>
+				<textarea class="form-control" id="CriarProjetoDescrição" rows="3" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-outline-primary" id="botaoCriarProjetoNovo">Criar</button>
+			<button type="submit" class="btn btn-outline-danger" id="botaoCancelarCriaçãoProjeto">Cancelar</button>
+		</form>
 	</div>
 
 
