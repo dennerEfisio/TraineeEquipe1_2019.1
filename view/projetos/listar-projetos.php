@@ -14,6 +14,20 @@
 </head>
 
 <body>
+	<?php require_once 'process.php'; ?>
+
+	<?php
+	if (isset($_SESSION['message'])) :
+	?>
+
+	<div class="alert alert-<?=$_SESSION['msg_type']?>">
+	<?php echo $_SESSION['message'];
+	unset($_SESSION['message']);
+	?>
+	</div>
+
+	<?php endif ?>
+
 	<?php
 	// conecta ao banco de dados
 	$mysqli = new mysqli('localhost', 'root', '', 'codigosenior') or die(mysqli_error($mysqli));
@@ -42,7 +56,7 @@
 					<tr>
 						<td scope="row"><?= $row['id']; ?></td>
 						<td><?= $row['nome']; ?></td>
-						<td><a href="especifico.php?edit=<?=$row['id']?>">Ver mais</a></td>
+						<td><a href="especifico.php?edit=<?= $row['id'] ?>" id="VerMaisEspecifico">Ver mais</a></td>
 					</tr>
 				<?php endwhile; ?>
 			</tbody>
