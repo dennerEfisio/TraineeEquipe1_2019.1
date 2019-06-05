@@ -17,6 +17,8 @@
 </head>
 
 <body>
+<?php require_once 'process.php'; ?>
+
 
   <!---------------------------------------------------------NAVEGACAO------------------------------------------------------------>
 
@@ -26,7 +28,7 @@
     <h2 class="criando-cargo">Crie o cargo do cliente</h2>
 
     <div class="container cargo-criar">
-      <form class="d-flex justify-content-around">
+      <form class="d-flex justify-content-around" action="process.php" method="POST">
         <div class="form-row">
           <div class="form-group col-8">
             <label for="nomecargo">Nome</label>
