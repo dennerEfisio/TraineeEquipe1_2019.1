@@ -1,0 +1,45 @@
+.contCardEspecificoDepartamento
+{
+margin-top: 5%;
+margin-bottom: 5%;
+background-color: white;
+}
+
+.cardEspecificoDepartamento
+{
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px;
+}
+
+.tituloCardDepartamento
+{
+ border-top:none
+}
+
+
+.card-buttons button
+{
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contTableListagemDepartamento
+{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemDepartamento button 
+{
+    margin-bottom: 1%;
+}
+
+.tituloDepartamento
+{
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+}
+
+
