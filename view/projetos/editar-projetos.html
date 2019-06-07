@@ -12,28 +12,28 @@
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 
-	<title>Criar - Projetos</title>
+	<title>Editar - Projetos</title>
 </head>
 
 <body>
-    <?php require_once 'process.php'; ?>
+
+	<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
 
 	<div class="container">
-		<h1 class="tituloProjeto">Criar Projeto</h1>
-		<form class="formProjeto" action="process.php" method="POST">
-			<div class="form-group nomeCriar">
+		<h1 class="tituloProjeto">Editar Projeto</h1>
+		<form class="formProjeto">
+			<div class="form-group nomeEditar">
 				<label>Nome:</label>
-				<input type="text" class="form-control" id="criarProjetoNome" placeholder="Nome do Projeto" required>
+				<input type="text" class="form-control" id="EditarProjetoNome" value="exemplo" required>
 			</div>
-			<div class="form-group descricaoCriar">
+			<div class="form-group descricaoEditar">
 				<label>Descrição do Projeto:</label>
-				<textarea class="form-control" id="CriarProjetoDescrição" rows="3" required></textarea>
+				<textarea class="form-control" id="EditarProjetoDescrição" rows="3" required></textarea>
 			</div>
-			<button type="submit" class="btn btn-outline-primary" id="botaoCriarProjetoNovo">Criar</button>
-			<button type="submit" class="btn btn-outline-danger" id="botaoCancelarCriaçãoProjeto">Cancelar</button>
+			<button type="submit" class="btn btn-outline-primary" id="botaoSalvarAlteracaoProjeto">Editar</button>
+			<button type="submit" class="btn btn-outline-danger" id="botaoCancelarAlteracaoProjeto">Cancelar</button>
 		</form>
 	</div>
-
 
 
 	<!-- Optional JavaScript -->
