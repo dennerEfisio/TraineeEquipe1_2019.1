@@ -31,26 +31,13 @@
 				</tr>
 			</thead>
 			<tbody>
+				<?php foreach($projetos as $projetos) : ?>
 				<tr>
-					<td scope="row">1</td>
-					<td>Projeto1</td>
+					<td scope="row"><?= $projetos->id; ?></td>
+					<td><?=$projetos->nome; ?></td>
 					<td><a href="#">Ver mais</a></td>
 				</tr>
-				<tr>
-					<td scope="row">2</td>
-					<td>Projeto2</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-				<tr>
-					<td scope="row">3</td>
-					<td>Projeto3</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
-				<tr>
-					<td scope="row">3</td>
-					<td>Projeto4</td>
-					<td><a href="#">Ver mais</a></td>
-				</tr>
+				<?php endforeach ?>
 			</tbody>
 		</table>
 	</div>
