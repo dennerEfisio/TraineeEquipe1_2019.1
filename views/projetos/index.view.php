@@ -1,26 +1,10 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="styles.css">
-
-	<title>Lista - Projetos</title>
-</head>
-
-<body>
+<?php require ('views/partials/header.php'); ?>
 	<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
 
 	<div class="container contTableListagemProjeto">
 		<h1 class="tituloProjeto">Lista de Projetos</h1>
 		<div class="tableButton">
-			<button type="submit" class="btn btn-outline-primary" id="botaoNovoProjetoLista">Novo</button>
+			<a href="create"><button type="button" class="btn btn-outline-primary">Novo</button></a>
 		</div>
 		<table class="table table-hover table-bordered contTableListagemProjeto">
 			<thead>
@@ -35,7 +19,7 @@
 				<tr>
 					<td scope="row"><?= $projetos->id; ?></td>
 					<td><?=$projetos->nome; ?></td>
-					<td><a href="#">Ver mais</a></td>
+					<td><a href="show">Ver mais</a></td>
 				</tr>
 				<?php endforeach ?>
 			</tbody>

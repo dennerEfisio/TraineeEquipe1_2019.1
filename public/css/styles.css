@@ -6,7 +6,9 @@ margin-top: 5%;
 margin-bottom: 5%;
 background-color: white;
 }
-
+h1{
+    text-align: center;
+}
 .cardEspecificoProjeto
 {
     padding-top: 1%;
