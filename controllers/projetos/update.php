@@ -1,6 +1,6 @@
 <?php
 
-$app['database']->update('projeto',[
+$app['database']->update2('projeto',[
     'nome' => $_POST['nome'],
     'descricao' => $_POST['descricao']
 ],'7');

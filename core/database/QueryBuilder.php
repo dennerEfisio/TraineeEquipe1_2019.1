@@ -46,13 +46,15 @@ class QueryBuilder
     }
 
 
-    public function update($table , $parameters, $id)
+    public function update2($table , $parameters, $id)
     {
         $sql = sprintf(
-        'update %s set %s = %s where %s.id = %s',
+        'update %s set %s = :%s, %s = :%s where %s.id = %s',
         $table,
-        implode(',', array_keys($parameters)),
-        ':' . implode(', :', array_keys($parameters)),
+        array_keys($parameters)[0],
+        array_keys($parameters)[0],
+        array_keys($parameters)[1],
+        array_keys($parameters)[1],
         $table,
         $id
     );
