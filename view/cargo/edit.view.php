@@ -1,42 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title>Criar Cargo</title>
-  <link rel="shortcut icon" href="../tipo/imagens/icecube.png">
-
-</head>
-
-<body>
-<?php require_once 'process.php'; ?>
-
+<?php require ("view/partials/head.php");?>
 
   <!---------------------------------------------------------NAVEGACAO------------------------------------------------------------>
 
   <!---------------------------------------------------------NAVEGACAO--------------------------------------------------------------------->
 
   <div class="container">
-    <h2 class="criando-cargo">Crie o cargo do cliente</h2>
+    <h2 class="criando-cargo">Edite o cargo do cliente</h2>
 
     <div class="container cargo-criar">
-      <form class="d-flex justify-content-around" action="process.php" method="POST">
+      <form class="d-flex justify-content-around">
         <div class="form-row">
-          <div class="form-group col-8">
-            <label for="nomecargo">Nome</label>
-            <input type="text" class="form-control" id="nomecargo" placeholder="NOME" required>
+          <div class="form-group col-12">
+            <label for="exampleFormControlInput1">Nome</label>
+            <input type="text" class="form-control" id="nomecargo" value="NOME">
           </div>
-          <div class="form-group col-4">
+          <div class="form-group col-12">
             <label for="departamentocargo">Departamento</label>
-            <select class="form-control" id="departamentocargo" required>
+            <select class="form-control" id="departamentocargo" value="departamentocargo">
               <option>Selecione o departamento</option>
               <option>Gerente</option>
               <option>Diretor</option>
@@ -49,7 +29,7 @@
       </form>
       <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-outline-dark botaozinho">Voltar</button>
-        <button type="button" class="btn btn-outline-primary botaozinho">Criar</button>
+        <button type="button" class="btn btn-outline-primary botaozinho">Editar</button>
       </div>
     </div>
   </div>

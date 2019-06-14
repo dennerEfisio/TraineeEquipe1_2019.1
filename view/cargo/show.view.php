@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt">
+<?php require ("view/partials/head.php");?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>Ver Mais</title>
-    <link rel="shortcut icon" href="../login/cube.png">
 
-</head>
-
-<body>
     <h2 class="intro-vendo-mais-cargo">INFORMAÇÕES SOBRE O CARGO</h2>
 
 
@@ -59,7 +43,7 @@
                 </div>
             </div>
 
-            <button type="button" class="btn btn-outline-primary">Editar</button>
+            <a class="btn btn-outline-primary" href="edit">Editar</a>
 
         </div>
     </div>
