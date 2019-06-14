@@ -1,7 +1,7 @@
 <?php 
 
 $router->define([
-    '' => 'controllers/index.php',
+    '' => 'pagesController@home',
     'edit' => 'view/cargo/edit.view.php',
     'create'=> 'controllers/save.php',
     'store'=>'controllers/add-cargo.php',
