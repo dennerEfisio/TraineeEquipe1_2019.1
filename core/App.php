@@ -17,6 +17,6 @@ class App{
             throw Exception("Nenhuma {$key} no container");
         }
 
-        return $registry[$key];
+        return static::$registry[$key];
     }
 }
