@@ -46,7 +46,7 @@ class QueryBuilder
     }
 
 
-    public function update2($table , $parameters, $id)
+    public function update_2($table , $parameters, $id)
     {
         $sql = sprintf(
         'update %s set %s = :%s, %s = :%s where %s.id = %s',
