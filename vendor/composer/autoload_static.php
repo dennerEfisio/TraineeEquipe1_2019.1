@@ -8,6 +8,7 @@ class ComposerStaticInit8592c98b1485db22e3bcdd78d55d81e3
 {
     public static $classMap = array (
         'App' => __DIR__ . '/../..' . '/core/App.php',
+        'CargoController' => __DIR__ . '/../..' . '/controllers/CargoController.php',
         'ComposerAutoloaderInit8592c98b1485db22e3bcdd78d55d81e3' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit8592c98b1485db22e3bcdd78d55d81e3' => __DIR__ . '/..' . '/composer/autoload_static.php',
@@ -18,7 +19,6 @@ class ComposerStaticInit8592c98b1485db22e3bcdd78d55d81e3
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/querybuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/request.php',
         'Router' => __DIR__ . '/../..' . '/core/router.php',
-        'pagesController' => __DIR__ . '/../..' . '/controllers/pagesController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

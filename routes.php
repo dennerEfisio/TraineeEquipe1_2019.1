@@ -1,4 +1,4 @@
 <?php 
 
 
-$router->get('cargo.index','CargoController@index');
+$router->get('index','CargoController@index');

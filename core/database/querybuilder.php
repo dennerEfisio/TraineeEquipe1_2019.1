@@ -3,8 +3,7 @@
 class QueryBuilder{
     protected $pdo;
 
-    public function __construct($pdo)
-    {
+    public function __construct($pdo){
         $this->pdo=$pdo;
     }
 
@@ -16,7 +15,6 @@ class QueryBuilder{
     }
 
     public function insert($table, $parameters){
-     
         $sql = sprintf(
             'insert into %s (%s) values (%s)', 
             $table, 
