@@ -1,12 +1,9 @@
 <?php
 
-$router->define([
-    '' => 'controllers/projetos/index.php',
-    'create' => 'controllers/projetos/create.php',
-    'store' => 'controllers/projetos/store.php',
-    'edit' => 'controllers/projetos/edit.php',
-    'show' => 'controllers/projetos/show.php',
-    'select' => 'controllers/projetos/select.php',
-    'delete' => 'controllers/projetos/delete.php',
-    'update' => 'controllers/projetos/update.php'
-]);
+$router->get('', 'projetoController@index');
+$router->get('create', 'projetoController@create');
+$router->post('store', 'projetoController@store');
+$router->get('edit', 'projetoController@edit');
+$router->get('show', 'projetoController@show');
+$router->get('delete', 'projetoController@delete');
+$router->get('update', 'projetoController@update');
