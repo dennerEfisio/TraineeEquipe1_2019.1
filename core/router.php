@@ -26,7 +26,7 @@ class Router
         $this->routes['POST'][$uri] = $controller;
     }
     public function get($uri, $controller){
-        $this->routes['POST'][$uri] = $controller;
+        $this->routes['GET'][$uri] = $controller;
     }
     protected function callAction($controller, $action){
         $controller = new $controller;
