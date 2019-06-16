@@ -14,5 +14,5 @@ return array(
     'QueryBuilder' => $baseDir . '/core/database/QueryBuilder.php',
     'Request' => $baseDir . '/core/Request.php',
     'Router' => $baseDir . '/core/Router.php',
-    'projetoController' => $baseDir . '/controllers/projetos/projetoController.php',
+    'projetoController' => $baseDir . '/controllers/projetoController.php',
 );

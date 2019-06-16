@@ -2,7 +2,7 @@
 
 class Router
 {
-    protected $routes = [
+    public $routes = [
         'GET' => [],
         'POST' => []
     ];

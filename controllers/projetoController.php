@@ -6,12 +6,12 @@ class projetoController
     {
         $projetos = App::get('database')->selectAll('projeto');
 
-        require view(projetos/index);
+        require view('projetos/index');
     }
 
     public function create()
     {
-        require view(projetos/create);
+        require view('projetos/create');
     }
 
     public function delete()
@@ -23,14 +23,14 @@ class projetoController
     {
         $projeto = App::get('database')->select('projeto', 6);
 
-        require view(projetos/edit);
+        require view('projetos/edit');
     }
 
     public function show()
     {
         $projeto = App::get('database')->select('projeto', 6);
 
-        require view(projetos/show);
+        require view('projetos/show');
     }
 
     public function store()
