@@ -6,12 +6,12 @@ class projetoController
     {
         $projetos = App::get('database')->selectAll('projeto');
 
-        require 'views/projetos/index.view.php';
+        require view(projetos/index);
     }
 
     public function create()
     {
-        require 'views/projetos/create.view.php';
+        require view(projetos/create);
     }
 
     public function delete()
@@ -23,14 +23,14 @@ class projetoController
     {
         $projeto = App::get('database')->select('projeto', 6);
 
-        require 'views/projetos/edit.view.php';
+        require view(projetos/edit);
     }
 
     public function show()
     {
         $projeto = App::get('database')->select('projeto', 6);
 
-        require 'views/projetos/show.view.php';
+        require view(projetos/show);
     }
 
     public function store()
@@ -39,7 +39,7 @@ class projetoController
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
         ]);
-        header('Location: /');
+        return redirect('projetos/index');
     }
 
     public function update()
@@ -48,6 +48,6 @@ class projetoController
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
         ], '6');
-        header('Location: /');
+        return redirect('projetos/index');
     }
 }

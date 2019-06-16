@@ -1,9 +1,9 @@
 <?php
 
-$router->get('', 'projetoController@index');
-$router->get('create', 'projetoController@create');
-$router->post('store', 'projetoController@store');
-$router->get('edit', 'projetoController@edit');
-$router->get('show', 'projetoController@show');
-$router->get('delete', 'projetoController@delete');
-$router->get('update', 'projetoController@update');
+$router->get('projeto/index', 'projetoController@index');
+$router->get('projeto/create', 'projetoController@create');
+$router->post('projeto/store', 'projetoController@store');
+$router->get('projeto/edit', 'projetoController@edit');
+$router->get('projeto/show', 'projetoController@show');
+$router->get('projeto/delete', 'projetoController@delete');
+$router->get('projeto/update', 'projetoController@update');
