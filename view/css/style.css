@@ -52,10 +52,24 @@
 }
 
 .botaozinho {
+
     margin-left: 2px;
     margin-right: 2px;
 }
 
 .botaozinho2 {
     margin-bottom: 8px;
+}
+
+.botao-edit{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.rotulo{
+    margin-right: 10px;
+}
+
+.trem{
+    color: steelblue !important;
 }
