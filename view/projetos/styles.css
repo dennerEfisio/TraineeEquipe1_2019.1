@@ -1,0 +1,42 @@
+.contCardEspecificoProjeto
+{
+display: flex;
+justify-content: center;
+margin-top: 5%;
+margin-bottom: 5%;
+background-color: white;
+}
+
+.cardEspecificoProjeto
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+.cardButtonsProjeto button
+{
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contTableListagemProjeto
+{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemProjeto button 
+{
+    margin-bottom: 1%;
+}
+
+.tituloProjeto
+{
+margin-top: 2.5%;
+margin-bottom: 2.5%;
+}
+
+

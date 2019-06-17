@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Criar - Serviço</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navProjeto">
+		<a class="navbar-brand" href="#">Código Sênior</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServiço" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Serviços
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownServiço">
+						<a class="dropdown-item" href="#">Projetos</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCliente" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Cliente
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownCliente">
+						<a class="dropdown-item" href="#">Tipos de clientes</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsuario" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Usuários
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownUsuario">
+						<a class="dropdown-item" href="#">Cargos</a>
+						<a class="dropdown-item" href="#">Departamentos</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Procurar" aria-label="Search">
+			</form>
+			<button type="submit" class="btn btn-outline-primary" id="navbarLogin">Login</button>
+
+		</div>
+	</nav>
+
+	<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
+
+	<div class="container">
+		<h1 class="tituloServiço">Criar Serviço</h1>
+		<form class="formServiço">
+			<div class="form-group nomeCriarServiço">
+				<label>Nome:</label>
+				<input type="text" class="form-control" id="criarServiçoNome" placeholder="Nome do Serviço" required>
+			</div>
+			<div class="form-group preçoCriarServiço">
+				<label>Preço:</label>
+				<input type="number" step="0.01" class="form-control" id="criarServiçoPreço" placeholder="Valor do Serviço" required>
+			</div>
+			<div class="form-group descontoCriarServiço">
+				<label>Desconto em %:</label>
+				<input type="number" class="form-control" id="criarServiçoDesconto" placeholder="Valor do desconto">
+			</div>
+			<div class="form-group anotaçãoCriarServiço">
+				<label>Anotações sobre o serviço:</label>
+				<textarea class="form-control" id="CriarServiçoAnotação" rows="3"></textarea>
+			</div>
+			<div class="form-group dataCriarServiço">
+				<label>Data da Venda</label>
+				<input type="date" class="form-control" id="criarServiçoData" placeholder="**/**/****" required>
+			</div>
+			<div class="form-group clienteCriarServiço">
+				<label for="inputState">Cliente:</label>
+				<select id="inputState SelecionarClienteCriarServiço" class="form-control" required>
+					<option selected>Escolha</option>
+					<option>Cliente 1</option>
+					<option>Cliente 2</option>
+					<option>Cliente 3</option>
+				</select>
+			</div>
+			<div class="form-group produtoCriarServiço">
+				<label for="inputState">Produto:</label>
+				<select id="inputState selecionarProdutoCriarServiço" class="form-control" required>
+					<option selected>Escolha</option>
+					<option>Produto 1</option>
+					<option>Produto 2</option>
+					<option>Produto 3</option>
+				</select>
+			</div>
+			<div class="form-group usuarioCriarServiço">
+				<label for="inputState">Usuário:</label>
+				<select id="inputState selecionarUsuarioCriarServiço" class="form-control" required>
+					<option selected>Escolha</option>
+					<option>Usuário 1</option>
+					<option>Usuário 2</option>
+					<option>Usuário 3</option>
+				</select>
+			</div>
+
+			<button type="submit" class="btn btn-outline-primary" id="botaoCriarServiçoNovo">Criar</button>
+			<button type="submit" class="btn btn-outline-danger" id="botaoCancelarCriaçãoServiço">Cancelar</button>
+		</form>
+
+	</div>
+
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
