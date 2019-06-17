@@ -1,0 +1,52 @@
+.criando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.formulario-cliente {
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+    font-weight: bold;
+}
+
+.editando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.listagem-clientes {
+    margin-top: 5vh;
+}
+
+.cliente-item-vermais {
+    font-family: 'Montserrat', sans-serif;
+    color: steelblue;
+}
+
+.contTableListagem
+{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagem button 
+{
+    margin-bottom: 10px;
+}
+
+.escolhendo-imagem{
+    margin-top: 5vh;
+    text-align: center;
+    color: steelblue;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
