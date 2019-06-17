@@ -9,8 +9,11 @@ class CargoController
     }
 
     public function store(){
-        $cargo = App::get('database')->insert('cargo');
-        return view('cargo/create', compact('cargo'));
+        App::get('database')->insert('cargo', [
+            'nome' =>$_POST['nome'],
+            'departamento_id'=>1
+        ]);
+        header('location: /index');
     }
 
     public function create(){
@@ -25,10 +28,10 @@ class CargoController
     }
 
     public function show(){
-        App::get('database')->show('cargo', [
-            'id' =>$_POST['2']
+        $cargp=App::get('database')->show('cargo', [
+            'id' =>'2'
         ]);
-        return view('cargo/show');
+        return view('cargo/show', compact('cargo'));
     }
 
     public function edit(){

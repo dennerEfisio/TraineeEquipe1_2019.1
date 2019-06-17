@@ -5,12 +5,11 @@
 
 
     <div class="container">
-        <div class="jumbotron">
             <div class="container for-about">
                 <h1 class="display-8 nome-cliente-ver-mais-cargo">Nome do cliente aqui!</h1>
                 <p class="lead">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action cliente-item-vermais">Departamento</a>
+                        <?php echo $cargo->$nome?>
                     </div>
             </div>
             </p>

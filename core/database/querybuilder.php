@@ -51,17 +51,10 @@ class QueryBuilder
     }
 
     public function show($table, $parameters){
-        $sql = sprint(
-            'Select from (%s) where ($s) (%s) (%s)',
-            $table,
-            implode(' = :', array_keys($parameters))
-        );
-
-        try {
-            $statement = $this->pdo->prepare($sql);
-            $statement->execute($parameters);
-        } catch (Exception $e){
-            die ('Algo deu errado ao informar mais informações sobre esse isso');
-        }
+        $id = array_values($parameters)[0];
+        $statement = $this->pdo->prepare("select * from {$table} where {$table}.id={$id}");
+        $statement->execute();
+        return $statement->fetchAll(PDO::FETCH_CLASS);
     }
+    
 }
