@@ -9,7 +9,7 @@
                 <h1 class="display-8 nome-cliente-ver-mais-cargo">Nome do cliente aqui!</h1>
                 <p class="lead">
                     <div class="list-group">
-                        <?php echo $cargo->$nome?>
+                        <?= $cargo->nome?>
                     </div>
             </div>
             </p>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-danger">Deletar</button>
+                            <a href=delete><button type="button" class="btn btn-danger"> Deletar </button></a>
                         </div>
                     </div>
                 </div>

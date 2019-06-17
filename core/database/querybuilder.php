@@ -36,10 +36,12 @@ class QueryBuilder
 
     public function delete($table, $parameters)
     {
+        $id = array_values($parameters)[0];
         $sql = sprintf(
-            'Delete from (%s) where (%s) (%s) (%s)',
+            'delete from %s where %s.id=%s',
             $table,
-            implode(' = :', array_keys($parameters))
+            $table,
+            $id
         );
 
         try {
@@ -54,7 +56,7 @@ class QueryBuilder
         $id = array_values($parameters)[0];
         $statement = $this->pdo->prepare("select * from {$table} where {$table}.id={$id}");
         $statement->execute();
-        return $statement->fetchAll(PDO::FETCH_CLASS);
+        return $statement->fetch(PDO::FETCH_OBJ);
     }
     
 }

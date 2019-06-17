@@ -20,15 +20,15 @@ class CargoController
         return view('cargo/create');
     }
 
-    public function delete(){
+    public function destroy(){
         App::get('database')->delete('cargo', [
-            'id' =>$_POST['id']
+            'id' =>'2'
         ]);
-        header('location: /');
+        header('location: /index');
     }
 
     public function show(){
-        $cargp=App::get('database')->show('cargo', [
+        $cargo=App::get('database')->show('cargo', [
             'id' =>'2'
         ]);
         return view('cargo/show', compact('cargo'));
