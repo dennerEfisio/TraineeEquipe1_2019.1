@@ -10,7 +10,7 @@
 				</p>
 			</div>
 			<div class="cardButtonsProjeto">
-				<a href="edit"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
+				<a href="projeto/edit"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
 				<button type="submit" class="btn btn-outline-danger" id="botaoDeletarProjetoEspecifico" data-toggle="modal"
 					data-target="#modalBotaoDeletarEspecifico">Deletar</button>
 			</div>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-					<a href="delete"><button type="submit" class="btn btn-danger">Deletar</button></a>
+					<a href="projeto/delete"><button type="submit" class="btn btn-danger">Deletar</button></a>
 				</div>
 			</div>
 		</div>
