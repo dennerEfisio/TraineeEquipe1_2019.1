@@ -35,6 +35,13 @@ class CargoController
     }
 
     public function edit(){
-        return view('cargo/edit');
+        $cargo=App::get('database')->show('cargo', [
+            'id' =>'2'
+        ]);
+        return view('cargo/edit', compact('cargo'));
+    }
+
+    public function update(){
+        header('location: /index');
     }
 }
