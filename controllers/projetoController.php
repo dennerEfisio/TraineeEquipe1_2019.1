@@ -39,7 +39,7 @@ class projetoController
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
         ]);
-        return redirect('projetos/index');
+        header("Location: /projetos/index");
     }
 
     public function update()
@@ -48,6 +48,6 @@ class projetoController
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
         ], '6');
-        return redirect('projetos/index');
+        header("Location: /projetos/index");
     }
 }
