@@ -4,13 +4,13 @@
 	<div class="container contCardEspecificoProjeto">
 		<div class="cardEspecificoProjeto">
 			<div class="card-body">
-				<h5 class="card-title"><?= $projeto->nome; ?></h5>
+				<h5 class="card-title"><?= $projetos->nome; ?></h5>
 				<p class="card-text">
-					<?= $projeto->descricao; ?>
+					<?= $projetos->descricao; ?>
 				</p>
 			</div>
 			<div class="cardButtonsProjeto">
-				<a href="projeto/edit"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
+				<a href="edit?id=<?= $projetos->id; ?>"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
 				<button type="submit" class="btn btn-outline-danger" id="botaoDeletarProjetoEspecifico" data-toggle="modal"
 					data-target="#modalBotaoDeletarEspecifico">Deletar</button>
 			</div>
@@ -32,7 +32,10 @@
 				</div>
 				<div class="modal-footer">
 					<button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-					<a href="projeto/delete"><button type="submit" class="btn btn-danger">Deletar</button></a>
+					<form action="delete" method="POST" >
+					<input type="hidden" name="id" value=" <?= $projetos->id; ?>">
+					<button type="submit" class="btn btn-danger">Deletar</button>
+					</form>
 				</div>
 			</div>
 		</div>

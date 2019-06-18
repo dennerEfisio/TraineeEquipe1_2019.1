@@ -4,7 +4,7 @@
 
 	<div class="container">
 		<h1 class="tituloProjeto">Criar Projeto</h1>
-		<form class="formProjeto" method="POST" action="projeto/store">
+		<form class="formProjeto" method="POST" action="store">
 			<div class="form-group nomeCriar">
 				<label>Nome:</label>
 				<input type="text" class="form-control" placeholder="Nome do Projeto" name="nome" required>
@@ -14,7 +14,7 @@
 				<textarea class="form-control" rows="3" name="descricao" required></textarea>
 			</div>
 			<button type="submit" class="btn btn-outline-primary">Criar</button>
-			<a href="projeto/index"><button type="button" class="btn btn-outline-danger">Cancelar</button></a>
+			<a href="index"><button type="button" class="btn btn-outline-danger">Cancelar</button></a>
 		</form>
 
 	</div>

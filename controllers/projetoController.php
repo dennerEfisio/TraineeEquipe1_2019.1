@@ -5,32 +5,33 @@ class projetoController
     public function index()
     {
         $projetos = App::get('database')->selectAll('projeto');
-
-        require view('projetos/index');
+        return view('projetos/index',compact('projetos'));
     }
 
     public function create()
     {
-        require view('projetos/create');
+        return view('projetos/create');
     }
 
     public function delete()
     {
-        App::get('database')->delete('projeto', '6');
+        App::get('database')->delete('projeto', $_POST['id']);
+
+        header("Location: /projeto/index");
     }
 
     public function edit()
     {
-        $projeto = App::get('database')->select('projeto', 6);
+        $projetos = App::get('database')->select('projeto', $_GET['id']);
 
-        require view('projetos/edit');
+        return view('projetos/edit',compact('projetos'));
     }
 
     public function show()
     {
-        $projeto = App::get('database')->select('projeto', 6);
+        $projetos = App::get('database')->select('projeto', $_GET['id']);
 
-        require view('projetos/show');
+        return view('projetos/show',compact('projetos'));
     }
 
     public function store()
@@ -39,15 +40,15 @@ class projetoController
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
         ]);
-        header("Location: /projetos/index");
+        header("Location: /projeto/index");
     }
 
     public function update()
     {
-        App::get('database')->update2('projeto', [
+        App::get('database')->update('projeto', [
             'nome' => $_POST['nome'],
             'descricao' => $_POST['descricao']
-        ], '6');
-        header("Location: /projetos/index");
+        ], $_POST['id']);
+        header("Location: /projeto/index");
     }
 }

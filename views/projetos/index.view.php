@@ -5,7 +5,7 @@
 	<div class="container contTableListagemProjeto">
 		<h1 class="tituloProjeto">Lista de Projetos</h1>
 		<div class="tableButton">
-			<a href="projeto/create"><button type="button" class="btn btn-outline-primary">Novo</button></a>
+			<a href="create"><button type="button" class="btn btn-outline-primary">Novo</button></a>
 		</div>
 		<table class="table table-hover table-bordered contTableListagemProjeto">
 			<thead>
@@ -16,11 +16,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach($projetos as $projetos) : ?>
+				<?php foreach($projetos as $projeto) : ?>
 				<tr>
-					<td scope="row"><?= $projetos->id; ?></td>
-					<td><?=$projetos->nome; ?></td>
-					<td><a href="projeto/show">Ver mais</a></td>
+					<td scope="row"><?= $projeto->id; ?></td>
+					<td><?=$projeto->nome; ?></td>
+					<td><a href="show?id=<?= $projeto->id; ?>">Ver mais</a></td>
 				</tr>
 				<?php endforeach ?>
 			</tbody>
