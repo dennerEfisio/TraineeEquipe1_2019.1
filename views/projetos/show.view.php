@@ -1,6 +1,4 @@
 <?php require('views/partials/header.php'); ?>
-<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
-
 <div class="container contCardEspecificoProjeto">
 	<div class="cardEspecificoProjeto">
 		<div class="card-body">
@@ -10,7 +8,7 @@
 			</p>
 		</div>
 		<div class="cardButtonsProjeto">
-			<a href="edit?id=<?= $projetos->id; ?>"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
+			<a href="/projeto/edit?id=<?= $projetos->id; ?>"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
 			<button type="submit" class="btn btn-outline-danger" id="botaoDeletarProjetoEspecifico" data-toggle="modal" data-target="#modalBotaoDeletarEspecifico">Deletar</button>
 		</div>
 	</div>
@@ -30,7 +28,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-				<form action="delete" method="POST">
+				<form action="/projeto/delete" method="POST">
 					<input type="hidden" name="id" value=" <?= $projetos->id; ?>">
 					<button type="submit" class="btn btn-danger">Deletar</button>
 				</form>
