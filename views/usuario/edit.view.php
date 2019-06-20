@@ -26,7 +26,7 @@
                 <?php endforeach; ?>
             </select>
         </div>
-
+        <input type="hidden" name="id" value="<?= $usuario->id; ?>">
         <button type="button" class="btn btn-outline-dark btn-block col-12 botao-criar-cliente">Voltar</button>
         <button type="submit" class="btn btn-outline-primary btn-block col-12 botao-criar-cliente">Editar</button>
     </form>

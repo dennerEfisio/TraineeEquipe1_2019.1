@@ -18,11 +18,11 @@
             <input type="text" class="form-control" placeholder="Ex: lku234r4zs23" name="senha" required>
         </div>
         <div class="form-group col-12 col-md-6  formulario-cliente">
-            <label for="tipocliente">Tipo</label>
-            <select class="form-control" name="cargo_id">
+            <label for="cargocliente">cargo</label>
+            <select class="form-control">
                 <option>Selecionar o cargo</option>
                 <?php foreach ($cargos as $cargos) : ?>
-                    <option><?= $cargos->nome ?></option>
+                    <option name="cargo_id" value="<?php $cargos->id; ?>"><?= $cargos->nome ?></option>
                 <?php endforeach; ?>
             </select>
         </div>
