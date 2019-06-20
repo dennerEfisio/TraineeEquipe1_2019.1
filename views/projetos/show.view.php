@@ -1,4 +1,6 @@
 <?php require('views/partials/header.php'); ?>
+<?php require('views/partials/nav.php'); ?>
+
 <div class="container contCardEspecificoProjeto">
 	<div class="cardEspecificoProjeto">
 		<div class="card-body">

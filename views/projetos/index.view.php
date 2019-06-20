@@ -1,6 +1,4 @@
-<?php require('views/partials/header.php'); ?>
-
-<!-- FIM DA NAVBAR, COMEÇO DO CODIGO ESPECIFICO DA PAGINA -->
+<?php require('views/partials/nav.php'); ?>
 
 <div class="container contTableListagemProjeto">
 	<h1 class="tituloProjeto">Lista de Projetos</h1>

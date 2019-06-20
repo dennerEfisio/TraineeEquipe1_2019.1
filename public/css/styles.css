@@ -1,7 +1,12 @@
+/* NAV BAR */
+
+.rotulo {
+    margin-right: 10px;
+}
+
 /* PROJETO */
 
-.contCardEspecificoProjeto
-{
+.contCardEspecificoProjeto {
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -9,11 +14,11 @@
     background-color: white;
 }
 
-h1{
+h1 {
     text-align: center;
 }
-.cardEspecificoProjeto
-{
+
+.cardEspecificoProjeto {
     padding-top: 1%;
     padding-bottom: 1%;
     border-radius: 10px;
@@ -21,28 +26,88 @@ h1{
     min-width: 20%;
 }
 
-.cardButtonsProjeto button
-{
+.cardButtonsProjeto button {
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.contTableListagemProjeto
+.contTableListagemProjeto {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemProjeto button {
+    margin-bottom: 1%;
+}
+
+.tituloProjeto {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+/* USUARIO */
+
+.criando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.formulario-cliente {
+    font-weight: bold;
+}
+
+.editando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.listagem-clientes {
+    margin-top: 5vh;
+}
+
+
+.contTableListagem
 {
     background-color: white;
     border-radius: 10px;
 }
 
-.contTableListagemProjeto button 
+.contTableListagem button 
 {
+    margin-bottom: 10px;
+}
+
+.escolhendo-imagem{
+    margin-top: 5vh;
+    font-weight: bold;
+
+}
+
+.contCardEspecificoUsuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+}
+
+.cardEspecificoUsuario {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px black solid;
+    min-width: 20%;
+}
+
+.cardButtonsUsuario button {
+    margin-left: 5%;
+    margin-top: 1%;
     margin-bottom: 1%;
 }
-
-.tituloProjeto
-{
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-}
-
-

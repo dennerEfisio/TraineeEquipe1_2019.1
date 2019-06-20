@@ -15,4 +15,5 @@ return array(
     'Request' => $baseDir . '/core/Request.php',
     'Router' => $baseDir . '/core/Router.php',
     'projetoController' => $baseDir . '/controllers/projetoController.php',
+    'usuarioController' => $baseDir . '/controllers/usuarioController.php',
 );
