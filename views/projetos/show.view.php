@@ -10,7 +10,7 @@
 			</p>
 		</div>
 		<div class="cardButtonsProjeto">
-			<a href="/projeto/edit?id=<?= $projetos->id; ?>"><button type="submit" class="btn btn-outline-primary" id="botaoEditarProjetoEspecifico">Editar</button></a>
+			<a href="/projeto/edit?id=<?= $projetos->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
 			<button type="submit" class="btn btn-outline-danger" id="botaoDeletarProjetoEspecifico" data-toggle="modal" data-target="#modalBotaoDeletarEspecifico">Deletar</button>
 		</div>
 	</div>

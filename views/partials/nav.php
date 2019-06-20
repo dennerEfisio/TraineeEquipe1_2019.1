@@ -18,7 +18,7 @@
         <a class="nav-link" href="#">Serviço</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Departamento</a>
+        <a class="nav-link" href="/departamento/index">Departamento</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/projeto/index">Projeto</a>

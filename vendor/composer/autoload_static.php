@@ -19,6 +19,7 @@ class ComposerStaticInitc19c5ce9aba37189ff788fdcdd17ddf3
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'departamentoController' => __DIR__ . '/../..' . '/controllers/departamentoController.php',
         'projetoController' => __DIR__ . '/../..' . '/controllers/projetoController.php',
         'usuarioController' => __DIR__ . '/../..' . '/controllers/usuarioController.php',
     );

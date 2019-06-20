@@ -72,22 +72,18 @@ h1 {
     margin-top: 5vh;
 }
 
-
-.contTableListagem
-{
+.contTableListagem {
     background-color: white;
     border-radius: 10px;
 }
 
-.contTableListagem button 
-{
+.contTableListagem button {
     margin-bottom: 10px;
 }
 
-.escolhendo-imagem{
+.escolhendo-imagem {
     margin-top: 5vh;
     font-weight: bold;
-
 }
 
 .contCardEspecificoUsuario {
@@ -110,4 +106,43 @@ h1 {
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+/* DEPARTAMENTO */
+
+.contCardEspecificoDepartamento {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    min-width: 20%;
+}
+
+.cardEspecificoDepartamento {
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px;
+}
+
+.tituloCardDepartamento {
+    border-top: none
+}
+
+.card-buttons button {
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contTableListagemDepartamento {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemDepartamento button {
+    margin-bottom: 1%;
+}
+
+.tituloDepartamento {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }

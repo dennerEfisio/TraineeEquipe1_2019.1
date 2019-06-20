@@ -15,3 +15,11 @@ $router->get('usuario/edit', 'usuarioController@edit');
 $router->get('usuario/show', 'usuarioController@show');
 $router->post('usuario/delete', 'usuarioController@delete');
 $router->post('usuario/update', 'usuarioController@update');
+
+$router->get('departamento/index', 'departamentoController@index');
+$router->get('departamento/create', 'departamentoController@create');
+$router->post('departamento/store', 'departamentoController@store');
+$router->get('departamento/edit', 'departamentoController@edit');
+$router->get('departamento/show', 'departamentoController@show');
+$router->post('departamento/delete', 'departamentoController@delete');
+$router->post('departamento/update', 'departamentoController@update');
