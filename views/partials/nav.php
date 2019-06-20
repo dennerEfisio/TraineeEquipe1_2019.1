@@ -27,7 +27,7 @@
         <a class="nav-link" href="/usuario/index">Usuário</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Cargo</a>
+        <a class="nav-link" href="/cargo/index">Cargo</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/tipo/index">Tipo</a>

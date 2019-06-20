@@ -31,3 +31,12 @@ $router->get('tipo/edit', 'tipoController@edit');
 $router->get('tipo/show', 'tipoController@show');
 $router->post('tipo/delete', 'tipoController@delete');
 $router->post('tipo/update', 'tipoController@update');
+
+$router->get('cargo/index', 'cargoController@index');
+$router->get('cargo/create', 'cargoController@create');
+$router->post('cargo/store', 'cargoController@store');
+$router->get('cargo/edit', 'cargoController@edit');
+$router->get('cargo/show', 'cargoController@show');
+$router->post('cargo/delete', 'cargoController@delete');
+$router->post('cargo/update', 'cargoController@update');
+

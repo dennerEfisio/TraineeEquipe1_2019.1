@@ -185,3 +185,27 @@ h1 {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
+
+/*CARGO*/
+
+.contCardEspecificoCargo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+}
+
+.cardEspecificoCargo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px black solid;
+    min-width: 20%;
+}
+
+.cardButtonsCargo button {
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
