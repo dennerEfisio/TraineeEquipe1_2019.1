@@ -4,9 +4,9 @@
 <div class="container contCardEspecificoProjeto">
 	<div class="cardEspecificoProjeto">
 		<div class="card-body">
-			<h5 class="card-title"><?= $projetos->nome; ?></h5>
+			<h5 class="card-title">Nome: <?=$projetos->nome; ?></h5>
 			<p class="card-text">
-				<?= $projetos->descricao; ?>
+				Descrição: <?= $projetos->descricao; ?>
 			</p>
 		</div>
 		<div class="cardButtonsProjeto">

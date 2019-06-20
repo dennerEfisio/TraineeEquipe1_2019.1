@@ -32,8 +32,9 @@ class usuarioController
     public function show()
     {
         $usuario = App::get('database')->select('usuario', $_GET['id']);
+        $cargo = App::get('database')->select('cargo', $usuario->cargo_id);
 
-        return view('usuario/show', compact('usuario'));
+        return view('usuario/show', compact('usuario', 'cargo'));
     }
 
     public function store()

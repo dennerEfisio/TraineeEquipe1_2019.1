@@ -5,10 +5,10 @@
     <div class="cardEspecificoUsuario">
         <div class="card-body">
             <img src="<?= $usuario->url_imagem; ?>" class="card-img-top">
-            <h5 class="card-title"><?= $usuario->nome; ?></h5>
+            <h5 class="card-title">Nome: <?= $usuario->nome; ?></h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><?= $usuario->email; ?></li>
-                <li class="list-group-item"><?= $usuario->cargo_id; ?></li>
+                <li class="list-group-item">Email: <?= $usuario->email; ?></li>
+                <li class="list-group-item">Cargo: <?= $cargo->nome; ?></li>
             </ul>
         </div>
         <div class="cardButtonsUsuario">
