@@ -25,9 +25,15 @@
                 <?php endforeach; ?>
             </select>
         </div>
+        <div class="form-group escolhendo-imagem col-12">
+            <label for="exampleFormControlFile1 ">Inserir foto</label>
+            <input type="file" class="form-control-file" name="url_imagem" accept="image/x-png,image/gif,image/jpeg">
+        </div>
         <input type="hidden" name="id" value="<?= $usuario->id; ?>">
-        <button type="button" class="btn btn-outline-dark btn-block col-12 botao-criar-cliente">Voltar</button>
-        <button type="submit" class="btn btn-outline-primary btn-block col-12 botao-criar-cliente">Editar</button>
+        <div>
+            <a href="/usuario/index"><button type="button" class="btn btn-outline-dark">Voltar</button></a>
+            <button type="submit" class="btn btn-outline-primary">Editar</button>
+        </div>
     </form>
 </div>
 

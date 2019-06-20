@@ -42,7 +42,7 @@ class usuarioController
             'nome' => $_POST['nome'],
             'email' => $_POST['email'],
             'senha' => $_POST['senha'],
-            'cargo_id'=> $_POST['cargo_id'],
+            'cargo_id' => $_POST['cargo_id'],
             'url_imagem' => $_POST['url_imagem']
 
         ]);
@@ -51,14 +51,24 @@ class usuarioController
 
     public function update()
     {
-        App::get('database')->update('usuario', [
-            'nome' => $_POST['nome'],
-            'email' => $_POST['email'],
-            'senha' => $_POST['senha'],
-            'cargo_id'=> $_POST['cargo_id'],
-            'url_imagem' => $_POST['url_imagem']
+        if ($_POST['url_imagem'] == null) {
+            App::get('database')->update('usuario', [
+                'nome' => $_POST['nome'],
+                'email' => $_POST['email'],
+                'senha' => $_POST['senha'],
+                'cargo_id' => $_POST['cargo_id'],
+            ], $_POST['id']);
+        } else {
+            App::get('database')->update('usuario', [
+                'nome' => $_POST['nome'],
+                'email' => $_POST['email'],
+                'senha' => $_POST['senha'],
+                'cargo_id' => $_POST['cargo_id'],
+                'url_imagem' => $_POST['url_imagem']
 
-        ], $_POST['id']);
+            ], $_POST['id']);
+        }
+
         header("Location: /usuario/index");
     }
 }

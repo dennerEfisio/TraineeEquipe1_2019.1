@@ -17,4 +17,4 @@
 		<a href="/projeto/index"><button type="submit" class="btn btn-outline-danger">Cancelar</button></a>
 	</form>
 </div>
-<?php require('views/partials/header.php'); ?>
+<?php require('views/partials/footer.php'); ?>
