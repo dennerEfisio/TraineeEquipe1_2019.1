@@ -1,7 +1,7 @@
 <?php require('views/partials/header.php'); ?>
 <?php require('views/partials/nav.php'); ?>
 
-<p class="intro">LISTAGEM DE USUÁRIOS</p>
+<p class="intro">Lista de usuários</p>
 
 
 <div class="container contTableListagem">
