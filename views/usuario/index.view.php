@@ -19,14 +19,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <?php foreach ($usuario as $usuario) : ?>
+                <?php foreach ($usuario as $usuario) : ?>
+                    <tr>
                         <td scope="row"><?= $usuario->id; ?></td>
                         <td><?= $usuario->nome ?></td>
                         <td><?= $usuario->email ?></td>
                         <td><a href="/usuario/show?id=<?= $usuario->id; ?>">Ver mais</a></td>
-                    <?php endforeach; ?>
-                </tr>
+                    </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>

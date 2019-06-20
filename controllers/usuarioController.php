@@ -26,7 +26,7 @@ class usuarioController
         $usuario = App::get('database')->select('usuario', $_GET['id']);
         $cargos = App::get('database')->selectAll('cargo');
 
-        return view('usuario/edit', compact('usuario'), compact('cargos'));
+        return view('usuario/edit', compact('usuario', 'cargos'));
     }
 
     public function show()

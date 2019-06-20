@@ -12,7 +12,7 @@
             </ul>
         </div>
         <div class="cardButtonsUsuario">
-            <a href="/Usuario/edit?id=<?= $usuario->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
+            <a href="/usuario/edit?id=<?= $usuario->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
             <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalDeletar"> Deletar </button>
         </div>
     </div>

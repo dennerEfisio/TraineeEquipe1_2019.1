@@ -15,14 +15,13 @@
         </div>
         <div class="form-group col-12 col-md-6 formulario-cliente">
             <label for="emailcliente">Senha</label>
-            <input type="email" class="form-control" name="senha" value="<?= $usuario->senha; ?>">
+            <input type="password" class="form-control" name="senha" value="<?= $usuario->senha; ?>">
         </div>
         <div class="form-group col-12 col-md-6 formulario-cliente">
             <label for="tipocliente">Cargo</label>
             <select class="form-control" name="cargo_id">
-                <option>Selecionar o tipo</option>
-                <?php foreach ($cargos as $cargos) : ?>
-                    <option><?= $cargos->id; ?></option>
+                <?php foreach ($cargos as $cargo) : ?>
+                    <option value="<?= $cargo->id; ?>"><?= $cargo->nome ?></option>
                 <?php endforeach; ?>
             </select>
         </div>
