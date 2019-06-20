@@ -16,5 +16,6 @@ return array(
     'Router' => $baseDir . '/core/Router.php',
     'departamentoController' => $baseDir . '/controllers/departamentoController.php',
     'projetoController' => $baseDir . '/controllers/projetoController.php',
+    'tipoController' => $baseDir . '/controllers/tipoController.php',
     'usuarioController' => $baseDir . '/controllers/usuarioController.php',
 );

@@ -30,7 +30,7 @@
         <a class="nav-link" href="#">Cargo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tipo</a>
+        <a class="nav-link" href="/tipo/index">Tipo</a>
       </li>
     </ul>
   </div>

@@ -146,3 +146,42 @@ h1 {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
+
+/*TIPO*/
+
+.contCardEspecificoTipo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    min-width: 20%;
+}
+
+.cardEspecificoTipo {
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px;
+}
+
+.tituloCardTipo {
+    border-top: none
+}
+
+.card-buttons button {
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contTableListagemTipo {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemTipo button {
+    margin-bottom: 1%;
+}
+
+.tituloTipo {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}

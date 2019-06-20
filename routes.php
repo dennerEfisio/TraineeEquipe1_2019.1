@@ -23,3 +23,11 @@ $router->get('departamento/edit', 'departamentoController@edit');
 $router->get('departamento/show', 'departamentoController@show');
 $router->post('departamento/delete', 'departamentoController@delete');
 $router->post('departamento/update', 'departamentoController@update');
+
+$router->get('tipo/index', 'tipoController@index');
+$router->get('tipo/create', 'tipoController@create');
+$router->post('tipo/store', 'tipoController@store');
+$router->get('tipo/edit', 'tipoController@edit');
+$router->get('tipo/show', 'tipoController@show');
+$router->post('tipo/delete', 'tipoController@delete');
+$router->post('tipo/update', 'tipoController@update');
