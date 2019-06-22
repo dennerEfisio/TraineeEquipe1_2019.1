@@ -12,7 +12,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#">Cliente</a>
+        <a class="nav-link" href="/cliente/index">Cliente</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Serviço</a>

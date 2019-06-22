@@ -209,3 +209,38 @@ h1 {
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
+/*CLIENTE*/
+
+.criando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.formulario-cliente {
+    font-weight: bold;
+}
+
+.editando-cliente {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.listagem-clientes {
+    margin-top: 5vh;
+}
+
+.contTableListagem {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagem button {
+    margin-bottom: 10px;
+}

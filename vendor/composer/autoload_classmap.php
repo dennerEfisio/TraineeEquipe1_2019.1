@@ -15,6 +15,7 @@ return array(
     'Request' => $baseDir . '/core/Request.php',
     'Router' => $baseDir . '/core/Router.php',
     'cargoController' => $baseDir . '/controllers/cargoController.php',
+    'clienteController' => $baseDir . '/controllers/clienteController.php',
     'departamentoController' => $baseDir . '/controllers/departamentoController.php',
     'projetoController' => $baseDir . '/controllers/projetoController.php',
     'tipoController' => $baseDir . '/controllers/tipoController.php',

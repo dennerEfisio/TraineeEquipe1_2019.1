@@ -40,3 +40,11 @@ $router->get('cargo/show', 'cargoController@show');
 $router->post('cargo/delete', 'cargoController@delete');
 $router->post('cargo/update', 'cargoController@update');
 
+$router->get('cliente/index', 'clienteController@index');
+$router->get('cliente/create', 'clienteController@create');
+$router->post('cliente/store', 'clienteController@store');
+$router->get('cliente/edit', 'clienteController@edit');
+$router->get('cliente/show', 'clienteController@show');
+$router->post('cliente/delete', 'clienteController@delete');
+$router->post('cliente/update', 'clienteController@update');
+
