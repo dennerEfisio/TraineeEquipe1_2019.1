@@ -23,6 +23,7 @@ class ComposerStaticInitc19c5ce9aba37189ff788fdcdd17ddf3
         'clienteController' => __DIR__ . '/../..' . '/controllers/clienteController.php',
         'departamentoController' => __DIR__ . '/../..' . '/controllers/departamentoController.php',
         'projetoController' => __DIR__ . '/../..' . '/controllers/projetoController.php',
+        'servicoController' => __DIR__ . '/../..' . '/controllers/servicoController.php',
         'tipoController' => __DIR__ . '/../..' . '/controllers/tipoController.php',
         'usuarioController' => __DIR__ . '/../..' . '/controllers/usuarioController.php',
     );

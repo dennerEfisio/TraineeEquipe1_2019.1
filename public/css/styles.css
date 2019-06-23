@@ -1,5 +1,4 @@
 /* NAV BAR */
-
 .rotulo {
     margin-right: 10px;
 }
@@ -243,4 +242,49 @@ h1 {
 
 .contTableListagem button {
     margin-bottom: 10px;
+}
+
+/*SERVIÇOS*/
+
+.contCardEspecificoServiço {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+}
+
+.cardEspecificoServiço {
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px;
+    min-width: 40%;
+}
+
+.tituloCardServiço {
+    border-top: none
+}
+
+.card-buttons button {
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contTableListagemServiço {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contTableListagemServiço button {
+    margin-bottom: 1%;
+}
+
+.tituloServiço {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.formServiço{
+    margin-bottom: 5%;
 }

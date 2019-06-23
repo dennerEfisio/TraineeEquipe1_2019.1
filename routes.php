@@ -48,3 +48,12 @@ $router->get('cliente/show', 'clienteController@show');
 $router->post('cliente/delete', 'clienteController@delete');
 $router->post('cliente/update', 'clienteController@update');
 
+$router->get('servico/index', 'servicoController@index');
+$router->get('servico/create', 'servicoController@create');
+$router->post('servico/store', 'servicoController@store');
+$router->get('servico/edit', 'servicoController@edit');
+$router->get('servico/show', 'servicoController@show');
+$router->post('servico/delete', 'servicoController@delete');
+$router->post('servico/update', 'servicoController@update');
+
+

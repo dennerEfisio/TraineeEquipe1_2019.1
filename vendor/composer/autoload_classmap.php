@@ -18,6 +18,7 @@ return array(
     'clienteController' => $baseDir . '/controllers/clienteController.php',
     'departamentoController' => $baseDir . '/controllers/departamentoController.php',
     'projetoController' => $baseDir . '/controllers/projetoController.php',
+    'servicoController' => $baseDir . '/controllers/servicoController.php',
     'tipoController' => $baseDir . '/controllers/tipoController.php',
     'usuarioController' => $baseDir . '/controllers/usuarioController.php',
 );

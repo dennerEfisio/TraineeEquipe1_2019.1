@@ -9,13 +9,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Login</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="/cliente/index">Cliente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Serviço</a>
+        <a class="nav-link" href="/servico/index">Serviço</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/departamento/index">Departamento</a>
