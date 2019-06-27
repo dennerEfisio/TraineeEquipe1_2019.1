@@ -20,7 +20,11 @@
 				<tr>
 					<td scope="row"><?= $servico->id ?></td>
 					<td><?= $servico->nome ?></td>
-					<td><?= $servico->cliente_id ?></td>
+					<?php foreach ($clientes as $cliente) : ?>
+						<?php if ($servico->cliente_id == $cliente->id) : ?>
+							<td><?= $cliente->nome ?></td>
+						<?php endif ?>
+					<?php endforeach; ?>
 					<td><a href="/servico/show?id=<?= $servico->id; ?>">Ver mais</a></td>
 				</tr>
 			<?php endforeach; ?>

@@ -5,7 +5,8 @@ class cargoController
     public function index()
     {
         $cargos = App::get('database')->selectAll('cargo');
-        return view('cargo/index', compact('cargos'));
+        $departamentos = App::get('database')->selectAll('departamento');
+        return view('cargo/index', compact('cargos', 'departamentos'));
     }
 
     public function create()

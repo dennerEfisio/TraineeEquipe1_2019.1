@@ -1,5 +1,9 @@
 <?php
 
+$router->get('', 'dashboardController@index');
+$router->get('login', 'loginController@index');
+
+
 $router->get('projeto/index', 'projetoController@index');
 $router->get('projeto/create', 'projetoController@create');
 $router->post('projeto/store', 'projetoController@store');
@@ -55,5 +59,3 @@ $router->get('servico/edit', 'servicoController@edit');
 $router->get('servico/show', 'servicoController@show');
 $router->post('servico/delete', 'servicoController@delete');
 $router->post('servico/update', 'servicoController@update');
-
-

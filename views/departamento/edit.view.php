@@ -9,8 +9,8 @@
 			<input type="text" class="form-control" name="nome" value="<?= $departamentos->nome; ?>" required>
 		</div>
 		<input type="hidden" name="id" value="<?= $departamentos->id; ?>">
-		<a href="/departamento/update"><button type="submit" class="btn btn-outline-primary" name="EditarDepartamento">Editar</button>
-		<a href="/departamento/index"><button type="submit" class="btn btn-outline-danger" id="Cancelar">Cancelar</button>
+		<a href="/departamento/update"><button type="submit" class="btn btn-outline-primary" name="EditarDepartamento">Editar</button></a>
+		<a href="/departamento/index"><button type="submit" class="btn btn-outline-danger" id="Cancelar">Cancelar</button></a>
 	</form>
 </div>
 

@@ -31,9 +31,9 @@
             <input type="file" class="form-control-file" name="url_imagem" accept="image/x-png,image/gif,image/jpeg">
         </div>
         <div>
-        <a href="/usuario/index"><button type="button" class="btn btn-outline-dark"> Voltar</button></a>
-        <button type="submit" class="btn btn-outline-primary"> Criar </button>
-        <div>
+            <a href="/usuario/index"><button type="button" class="btn btn-outline-dark"> Voltar</button></a>
+            <button type="submit" class="btn btn-outline-primary"> Criar </button>
+        </div>
     </form>
 </div>
 <?php require('views/partials/footer.php'); ?>

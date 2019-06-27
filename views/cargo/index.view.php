@@ -22,7 +22,11 @@
                     <tr>
                         <td scope="row"><?= $cargo->id; ?></td>
                         <td><?= $cargo->nome; ?></td>
-                        <td><?= $cargo->departamento_id; ?></td>
+                        <?php foreach ($departamentos as $departamento) : ?>
+                            <?php if ($cargo->departamento_id == $departamento->id) : ?>
+                                <td><?= $departamento->nome; ?></td>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                         <td><a href="/cargo/show?id=<?= $cargo->id; ?>">Ver mais</a></td>
                     </tr>
                 <?php endforeach; ?>

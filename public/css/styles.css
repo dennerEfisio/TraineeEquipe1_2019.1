@@ -1,4 +1,10 @@
 /* NAV BAR */
+
+nav {
+    margin-top: 0%;
+    color: aquamarine;
+}
+
 .rotulo {
     margin-right: 10px;
 }
@@ -285,6 +291,121 @@ h1 {
     margin-bottom: 2.5%;
 }
 
-.formServiço{
+.formServiço {
     margin-bottom: 5%;
+}
+
+/*Dashboard*/
+
+.contDashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.dashboardCard1 {
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.dashboardCard2 {
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.dashboardCard3 {
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.dashboardCard4 {
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+.tituloDashboard {
+    margin-left: 2%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+/* FOOTER */
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* LOGIN */
+
+.imagem-fundo {
+    background-image: url('../public/imagens/computer4.png');
+    background-repeat: no-repeat;
+}
+
+.login-card {
+    background-color: steelblue;
+    border: 3px solid #f1f1f1;
+    width: 30vw;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    opacity: 0.95;
+    box-sizing: border-box;
+    animation: login-principal;
+    animation-duration: 1s;
+}
+
+@media (max-width: 1024px) {
+    .login-card {
+        width: 80vw;
+    }
+}
+
+.boas-vindas {
+    text-align: center;
+    color: steelblue;
+    font-size: 50px;
+    margin-top: 20vh;
+    animation: bem-vindo-principal;
+    animation-duration: 1s;
+}
+
+@keyframes login-principal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 0.95;
+        transform: translateY(0)
+    }
+}
+
+@keyframes bem-vindo-principal {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
 }

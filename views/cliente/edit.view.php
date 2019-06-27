@@ -59,5 +59,6 @@
             <button type="submit" class="btn btn-outline-primary">Editar</button>
         </div>
     </form>
+</div>
 
-    <?php require('views/partials/footer.php'); ?>
+<?php require('views/partials/footer.php'); ?>

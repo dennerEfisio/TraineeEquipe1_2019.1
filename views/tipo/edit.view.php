@@ -9,8 +9,8 @@
 			<input type="text" class="form-control" name="nome" value="<?= $tipos->nome; ?>" required>
 		</div>
 		<input type="hidden" name="id" value="<?= $tipos->id; ?>">
-		<a href="/tipo/update"><button type="submit" class="btn btn-outline-primary" name="EditarTipo">Editar</button>
-			<a href="/tipo/index"><button type="submit" class="btn btn-outline-danger" id="Cancelar">Cancelar</button>
+		<a href="/tipo/update"><button type="submit" class="btn btn-outline-primary" name="EditarTipo">Editar</button></a>
+			<a href="/tipo/index"><button type="submit" class="btn btn-outline-danger" id="Cancelar">Cancelar</button></a>
 	</form>
 </div>
 

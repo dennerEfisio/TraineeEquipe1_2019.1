@@ -9,7 +9,7 @@
 			<input type="text" class="form-control" placeholder="Nome do tipo" name="nome" required>
 		</div>
 		<button type="submit" class="btn btn-outline-primary" name="criartipo">Criar</button>
-		<a href="/tipo/index"><button type="button" class="btn btn-outline-danger">Cancelar</button>
+		<a href="/tipo/index"><button type="button" class="btn btn-outline-danger">Cancelar</button></a>
 	</form>
 
 </div>
