@@ -21,10 +21,6 @@
 			<label>Anotações sobre o serviço:</label>
 			<textarea class="form-control" name="anotacoes" rows="3"></textarea>
 		</div>
-		<div class="form-group dataCriarServiço">
-			<label>Data da Venda</label>
-			<input type="date" class="form-control" placeholder="**/**/****" name="data_venda" required>
-		</div>
 		<div class="form-group clienteCriarServiço">
 			<label for="inputState">Cliente:</label>
 			<select id="inputState" class="form-control" name="cliente_id" required>

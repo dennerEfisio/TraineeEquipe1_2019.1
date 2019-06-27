@@ -2,11 +2,16 @@
 
 nav {
     margin-top: 0%;
-    color: aquamarine;
 }
 
 .rotulo {
     margin-right: 10px;
+}
+
+.botaoLogin
+{
+    display: block;
+    align-self: flex-end;
 }
 
 /* PROJETO */
@@ -111,6 +116,11 @@ h1 {
     margin-left: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+.botaoEditUsuario
+{
+    margin-top: 5%;
 }
 
 /* DEPARTAMENTO */
@@ -348,8 +358,9 @@ body {
 }
 
 .footer {
+    background-color: #e3f2fd;
     flex-shrink: 0;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 

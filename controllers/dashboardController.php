@@ -4,6 +4,11 @@ class dashboardController
 {
     public function index()
     {
-        return view('dashboard/dashboard');
+        session_start();
+        if ($_SESSION['login']) {
+            return view('dashboard/dashboard');
+        } else {
+            header('Location: /login');
+        }
     }
 }

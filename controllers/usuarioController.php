@@ -42,7 +42,7 @@ class usuarioController
         App::get('database')->insert('usuario', [
             'nome' => $_POST['nome'],
             'email' => $_POST['email'],
-            'senha' => $_POST['senha'],
+            'senha' => md5($_POST['senha']),
             'cargo_id' => $_POST['cargo_id'],
             'url_imagem' => $_POST['url_imagem']
 
@@ -56,14 +56,14 @@ class usuarioController
             App::get('database')->update('usuario', [
                 'nome' => $_POST['nome'],
                 'email' => $_POST['email'],
-                'senha' => $_POST['senha'],
+                'senha' => md5($_POST['senha']),
                 'cargo_id' => $_POST['cargo_id'],
             ], $_POST['id']);
         } else {
             App::get('database')->update('usuario', [
                 'nome' => $_POST['nome'],
                 'email' => $_POST['email'],
-                'senha' => $_POST['senha'],
+                'senha' => md5($_POST['senha']),
                 'cargo_id' => $_POST['cargo_id'],
                 'url_imagem' => $_POST['url_imagem']
 

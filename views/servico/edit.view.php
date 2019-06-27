@@ -20,10 +20,6 @@
 			<label>Anotações sobre o serviço:</label>
 			<textarea class="form-control" name="anotacoes" rows="3"><?= $servico->anotacoes; ?></textarea>
 		</div>
-		<div class="form-group dataEditarServiço">
-			<label>Data da Venda</label>
-			<input type="date" class="form-control" name="data_venda" value="<?= $servico->data_venda; ?>" required>
-		</div>
 		<div class="form-group clienteEditarServiço">
 			<label for="inputState">Cliente:</label>
 			<select id="inputState" name="cliente_id" class="form-control" required>

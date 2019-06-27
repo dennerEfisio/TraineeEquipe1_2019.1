@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
   <i class="fas fa-cube rotulo"></i>
-  <a class="navbar-brand" href="">Código Sênior</a>
+  <a class="navbar-brand" href="/home">Código Sênior</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="/login">Login</a>
-      </li>
+      </li> -->
       <li class="nav-item ">
         <a class="nav-link" href="/cliente/index">Cliente</a>
       </li>
@@ -33,3 +33,4 @@
     </ul>
   </div>
 </nav>
+  <div class="content">

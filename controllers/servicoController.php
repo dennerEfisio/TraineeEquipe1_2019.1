@@ -51,7 +51,6 @@ class servicoController
             'desconto' => $_POST['desconto'],
             'preco' => $_POST['preco'],
             'anotacoes' => $_POST['anotacoes'],
-            'data_venda' => $_POST['data_venda'],
             'cliente_id' => $_POST['cliente_id'],
             'produto_id' => $_POST['produto_id'],
             'usuario_id' => $_POST['usuario_id']
@@ -67,7 +66,6 @@ class servicoController
             'desconto' => $_POST['desconto'],
             'preco' => $_POST['preco'],
             'anotacoes' => $_POST['anotacoes'],
-            'data_venda' => $_POST['data_venda'],
             'cliente_id' => $_POST['cliente_id'],
             'produto_id' => $_POST['produto_id'],
             'usuario_id' => $_POST['usuario_id']

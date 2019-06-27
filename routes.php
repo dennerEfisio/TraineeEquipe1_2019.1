@@ -1,7 +1,8 @@
 <?php
 
-$router->get('', 'dashboardController@index');
+$router->get('home', 'dashboardController@index');
 $router->get('login', 'loginController@index');
+$router->post('login', 'loginController@login');
 
 
 $router->get('projeto/index', 'projetoController@index');

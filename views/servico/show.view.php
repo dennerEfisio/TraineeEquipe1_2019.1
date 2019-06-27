@@ -13,7 +13,7 @@
 		<li class="list-group-item">Produto: <?= $projeto->nome ?></li>
 		<li class="list-group-item">Usuário: <?= $usuario->nome ?></li>
 		<li class="list-group-item">
-			<p class="card-text"><?= $servico->anotacoes ?></p>
+			<p class="card-text">Descrição: <?= $servico->anotacoes ?></p>
 		</li>
 		<div class="card-buttons">
 			<a href="/servico/edit?id=<?= $servico->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
