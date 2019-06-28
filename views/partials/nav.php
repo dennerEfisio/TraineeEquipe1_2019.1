@@ -6,9 +6,6 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
-      </li> -->
       <li class="nav-item ">
         <a class="nav-link" href="/cliente/index">Cliente</a>
       </li>
@@ -32,5 +29,10 @@
       </li>
     </ul>
   </div>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="/logout">Logout</a>
+    </li>
+  </ul>
 </nav>
-  <div class="content">
+<div class="content">

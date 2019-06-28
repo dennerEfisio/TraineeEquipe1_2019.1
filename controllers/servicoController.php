@@ -6,7 +6,9 @@ class servicoController
     {
         $servicos = App::get('database')->selectAll('servico');
         $clientes = App::get('database')->selectAll('cliente');
-        return view('servico/index', compact('servicos', 'clientes'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('servico/index', compact('servicos', 'clientes'));
+        }
     }
 
     public function create()
@@ -14,7 +16,9 @@ class servicoController
         $clientes = App::get('database')->selectAll('cliente');
         $projetos = App::get('database')->selectAll('projeto');
         $usuarios = App::get('database')->selectAll('usuario');
-        return view('servico/create', compact('clientes', 'projetos', 'usuarios'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('servico/create', compact('clientes', 'projetos', 'usuarios'));
+        }
     }
 
     public function delete()
@@ -30,8 +34,9 @@ class servicoController
         $clientes = App::get('database')->selectAll('cliente');
         $projetos = App::get('database')->selectAll('projeto');
         $usuarios = App::get('database')->selectAll('usuario');
-
-        return view('servico/edit', compact('servico', 'clientes', 'projetos', 'usuarios'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('servico/edit', compact('servico', 'clientes', 'projetos', 'usuarios'));
+        }
     }
 
     public function show()
@@ -40,8 +45,9 @@ class servicoController
         $cliente = App::get('database')->select('cliente', $servico->cliente_id);
         $projeto = App::get('database')->select('projeto', $servico->produto_id);
         $usuario = App::get('database')->select('usuario', $servico->usuario_id);
-
-        return view('servico/show', compact('servico', 'cliente', 'projeto', 'usuario'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('servico/show', compact('servico', 'cliente', 'projeto', 'usuario'));
+        }
     }
 
     public function store()

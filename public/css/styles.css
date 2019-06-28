@@ -1,17 +1,7 @@
 /* NAV BAR */
 
-nav {
-    margin-top: 0%;
-}
-
 .rotulo {
     margin-right: 10px;
-}
-
-.botaoLogin
-{
-    display: block;
-    align-self: flex-end;
 }
 
 /* PROJETO */
@@ -118,8 +108,13 @@ h1 {
     margin-bottom: 1%;
 }
 
-.botaoEditUsuario
-{
+.cardEspecificoUsuario img{
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.botaoEditUsuario {
     margin-top: 5%;
 }
 

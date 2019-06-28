@@ -4,11 +4,8 @@ class dashboardController
 {
     public function index()
     {
-        session_start();
-        if ($_SESSION['login']) {
+        if (require('views/partials/loginCheck.php')) {
             return view('dashboard/dashboard');
-        } else {
-            header('Location: /login');
         }
     }
 }

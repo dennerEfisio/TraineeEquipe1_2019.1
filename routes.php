@@ -3,6 +3,7 @@
 $router->get('home', 'dashboardController@index');
 $router->get('login', 'loginController@index');
 $router->post('login', 'loginController@login');
+$router->get('logout', 'loginController@logout');
 
 
 $router->get('projeto/index', 'projetoController@index');

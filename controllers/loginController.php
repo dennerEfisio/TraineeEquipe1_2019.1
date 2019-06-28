@@ -20,9 +20,11 @@ class loginController
         }
     }
 
-    public function destroy()
+    public function logout()
     {
+        session_start();
         session_destroy();
-        return view('login/login');
+
+        header("Location: /login");
     }
 }

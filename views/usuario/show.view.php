@@ -4,7 +4,7 @@
 <div class="container contCardEspecificoUsuario">
     <div class="cardEspecificoUsuario">
         <div class="card-body">
-            <img src="/public/imagens/<?= $usuario->url_imagem; ?>" class="card-img-top" style="width: 250px;">
+            <img src="/public/imagens/<?= $usuario->url_imagem; ?>" class="card-img-top">
             <h5 class="card-title">Nome: <?= $usuario->nome; ?></h5>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Email: <?= $usuario->email; ?></li>

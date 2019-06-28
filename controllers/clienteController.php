@@ -5,13 +5,17 @@ class clienteController
     public function index()
     {
         $clientes = App::get('database')->selectAll('cliente');
-        return view('cliente/index', compact('clientes'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('cliente/index', compact('clientes'));
+        }
     }
 
     public function create()
     {
         $tipos = App::get('database')->selectAll('tipo');
-        return view('cliente/create', compact('tipos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('cliente/create', compact('tipos'));
+        }
     }
 
     public function delete()
@@ -26,15 +30,18 @@ class clienteController
         $cliente = App::get('database')->select('cliente', $_GET['id']);
         $tipos = App::get('database')->selectAll('tipo');
 
-        return view('cliente/edit', compact('cliente', 'tipos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('cliente/edit', compact('cliente', 'tipos'));
+        }
     }
 
     public function show()
     {
         $cliente = App::get('database')->select('cliente', $_GET['id']);
         $tipo = App::get('database')->select('tipo', $cliente->tipo_id);
-
-        return view('cliente/show', compact('cliente', 'tipo'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('cliente/show', compact('cliente', 'tipo'));
+        }
     }
 
     public function store()

@@ -5,12 +5,16 @@ class departamentoController
     public function index()
     {
         $departamentos = App::get('database')->selectAll('departamento');
-        return view('departamento/index', compact('departamentos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('departamento/index', compact('departamentos'));
+        }
     }
 
     public function create()
     {
-        return view('departamento/create');
+        if (require('views/partials/loginCheck.php')) {
+            return view('departamento/create');
+        }
     }
 
     public function delete()
@@ -23,15 +27,17 @@ class departamentoController
     public function edit()
     {
         $departamentos = App::get('database')->select('departamento', $_GET['id']);
-
-        return view('departamento/edit', compact('departamentos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('departamento/edit', compact('departamentos'));
+        }
     }
 
     public function show()
     {
         $departamentos = App::get('database')->select('departamento', $_GET['id']);
-
-        return view('departamento/show', compact('departamentos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('departamento/show', compact('departamentos'));
+        }
     }
 
     public function store()

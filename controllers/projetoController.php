@@ -5,12 +5,16 @@ class projetoController
     public function index()
     {
         $projetos = App::get('database')->selectAll('projeto');
-        return view('projetos/index',compact('projetos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('projetos/index', compact('projetos'));
+        }
     }
 
     public function create()
     {
-        return view('projetos/create');
+        if (require('views/partials/loginCheck.php')) {
+            return view('projetos/create');
+        }
     }
 
     public function delete()
@@ -23,15 +27,17 @@ class projetoController
     public function edit()
     {
         $projetos = App::get('database')->select('projeto', $_GET['id']);
-
-        return view('projetos/edit',compact('projetos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('projetos/edit', compact('projetos'));
+        }
     }
 
     public function show()
     {
         $projetos = App::get('database')->select('projeto', $_GET['id']);
-
-        return view('projetos/show',compact('projetos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('projetos/show', compact('projetos'));
+        }
     }
 
     public function store()

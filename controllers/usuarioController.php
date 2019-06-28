@@ -5,13 +5,17 @@ class usuarioController
     public function index()
     {
         $usuario = App::get('database')->selectAll('usuario');
-        return view('usuario/index', compact('usuario'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('usuario/index', compact('usuario'));
+        }
     }
 
     public function create()
     {
         $cargos = App::get('database')->selectAll('cargo');
-        return view('usuario/create', compact('cargos'));
+        if (require('views/partials/loginCheck.php')) { { }
+            return view('usuario/create', compact('cargos'));
+        }
     }
 
     public function delete()
@@ -25,16 +29,18 @@ class usuarioController
     {
         $usuario = App::get('database')->select('usuario', $_GET['id']);
         $cargos = App::get('database')->selectAll('cargo');
-
-        return view('usuario/edit', compact('usuario', 'cargos'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('usuario/edit', compact('usuario', 'cargos'));
+        }
     }
 
     public function show()
     {
         $usuario = App::get('database')->select('usuario', $_GET['id']);
         $cargo = App::get('database')->select('cargo', $usuario->cargo_id);
-
-        return view('usuario/show', compact('usuario', 'cargo'));
+        if (require('views/partials/loginCheck.php')) {
+            return view('usuario/show', compact('usuario', 'cargo'));
+        }
     }
 
     public function store()
