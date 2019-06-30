@@ -1,23 +1,27 @@
 <?php require('views/partials/header.php'); ?>
 <?php require('views/partials/nav.php'); ?>
 
+<p class="intro"><?= $servico->nome ?></p>
+
 <div class="container contCardEspecificoServiço">
-	<div class="cardEspecificoServiço">
-		<li class="list-group-item">
-			<h5 class="card-title tituloCardServiço"><?= $servico->nome ?></h5>
-		</li>
-		<li class="list-group-item">Preço: <?= $servico->preco ?></li>
-		<li class="list-group-item">Desconto: <?= $servico->desconto ?></li>
-		<li class="list-group-item">Data: <?= $servico->data_venda ?></li>
-		<li class="list-group-item">Cliente: <?= $cliente->nome ?></li>
-		<li class="list-group-item">Produto: <?= $projeto->nome ?></li>
-		<li class="list-group-item">Usuário: <?= $usuario->nome ?></li>
-		<li class="list-group-item">
-			<p class="card-text">Descrição: <?= $servico->anotacoes ?></p>
-		</li>
-		<div class="card-buttons">
-			<a href="/servico/edit?id=<?= $servico->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
-			<button type="submit" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalBotaoDeletarEspecificoServiço">Deletar</button>
+	<div class="jumbotron">
+		<div class="cardEspecificoServiço">
+			<li class="list-group-item">
+				<h5 class="card-title tituloCardServiço"><?= $servico->nome ?></h5>
+			</li>
+			<li class="list-group-item">Preço: <?= $servico->preco ?></li>
+			<li class="list-group-item">Desconto: <?= $servico->desconto ?></li>
+			<li class="list-group-item">Data: <?= $servico->data_venda ?></li>
+			<li class="list-group-item">Cliente: <?= $cliente->nome ?></li>
+			<li class="list-group-item">Produto: <?= $projeto->nome ?></li>
+			<li class="list-group-item">Usuário: <?= $usuario->nome ?></li>
+			<li class="list-group-item">
+				<p class="card-text">Descrição: <?= $servico->anotacoes ?></p>
+			</li>
+			<div class="card-buttons">
+				<a href="/servico/edit?id=<?= $servico->id; ?>"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
+				<button type="submit" class="btn btn-outline-danger" data-toggle="modal" data-target="#modalBotaoDeletarEspecificoServiço">Deletar</button>
+			</div>
 		</div>
 	</div>
 </div>

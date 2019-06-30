@@ -1,7 +1,7 @@
 <?php require('views/partials/header.php'); ?>
 <?php require('views/partials/nav.php'); ?>
 
-<p class="intro">Criar usuário</p>
+<p class="intro">Criar Cargo</p>
 
 <div class="container">
   <form method="POST" action="/cargo/store">

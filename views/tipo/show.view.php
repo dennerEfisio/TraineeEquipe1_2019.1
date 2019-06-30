@@ -4,7 +4,7 @@
 <div class="container contCardEspecificoTipo">
 	<div class="cardEspecificoTipo">
 		<li class="list-group-item">
-			<h5 class="card-title tituloCardTipo"><?= $tipos->nome; ?></h5>
+			<h5 class="card-title tituloCardTipo">Tipo:</h5>
 		</li>
 		<li class="list-group-item">Nome: <?= $tipos->nome; ?></li>
 		<div class="card-buttons">

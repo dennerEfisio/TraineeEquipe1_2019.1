@@ -14,7 +14,7 @@
 		</div>
 		<input type="hidden" name="id" value="<?= $projetos->id; ?>">
 		<a href="/projeto/update"><button type="submit" class="btn btn-outline-primary">Editar</button></a>
-		<a href="/projeto/index"><button type="submit" class="btn btn-outline-danger">Cancelar</button></a>
+		<a href="/projeto/index"><button type="button" class="btn btn-outline-danger">Cancelar</button></a>
 	</form>
 </div>
 <?php require('views/partials/footer.php'); ?>
