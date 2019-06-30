@@ -2,9 +2,7 @@
 ## Projeto Trainee, Code Jr, 2019.1
 
 Desenvolvedores:
-- Denner,
-- Gabriel,
-- Felipe
+- Denner
 
 
 Scrum Master:
