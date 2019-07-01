@@ -7,7 +7,7 @@
     <div class="tableButton">
         <a href="/cargo/create"><button type="button" class="btn btn-outline-primary">Novo</button></a>
     </div>
-    <div class="table-responsive">
+    <div class="table">
         <table class="table table-hover table-bordered tableListagem">
             <thead>
                 <tr>

@@ -8,7 +8,7 @@
         <img src="/public/imagens/cube.png" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Código Senior</h5>
-            <p class="card-text">Seja Bem vindo ao Sistema da Código Senior!</p>
+            <p class="card-text">Seja bem vindo ao sistema da Código Senior!</p>
         </div>
     </div>
 </div>

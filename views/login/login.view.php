@@ -1,6 +1,7 @@
 <?php require('views/partials/header.php'); ?>
 
-<span class="imagem-fundo">
+<body style="background-image: url('../public/imagens/computer4.png');">
+
     <h1 class="boas-vindas">Código Sênior</h1>
 
     <form class="container login-card" method="POST" action="/login">
@@ -14,5 +15,3 @@
         </div>
         <button type="submit" class="btn btn-primary">Logar</button>
     </form>
-</span>
-

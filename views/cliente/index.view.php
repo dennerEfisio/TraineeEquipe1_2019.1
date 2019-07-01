@@ -8,7 +8,7 @@
 	<div class="tableButton">
 		<a href="/cliente/create"><button type="button" class="btn btn-outline-primary" id="botaoNovoProjetoLista">Novo</button></a>
 	</div>
-	<div class="table-responsive">
+	<div class="table">
 		<table class="table table-hover table-bordered tableListagem">
 			<thead>
 				<tr>
